@@ -1,0 +1,23 @@
+{
+  "name": "template-views",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-sass": "sass --watch resource/scss:resource/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Febrianto100/template-views.git"
+  },
+  "author": "febrianto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Febrianto100/template-views/issues"
+  },
+  "homepage": "https://github.com/Febrianto100/template-views#readme",
+  "dependencies": {
+    "sass": "^1.43.5"
+  }
+}
