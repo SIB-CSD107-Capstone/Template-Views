@@ -23,8 +23,6 @@ body {
     margin-left: 45px;
     cursor: pointer;
 
-    &.active {}
-
     &:hover {
         border-top: 4px solid colors.$secondary-color;
     }
