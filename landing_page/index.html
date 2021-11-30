@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><span class="iconify" data-icon="healthicons:virus-alt"></span>
           RANAVID</a>
@@ -47,7 +47,75 @@
 
     </nav>
 
+    <main>
+      <section id="search-bar" class="search-bar">
+        <div class="container">
+          <header>
+            <h2>CEK KETERSEDIAAN <br>RAWAT INAP RUMAH SAKIT</h2>
+          </header>
 
+          <div class="row justify-content-center">
+            <div class="col col-md-8">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <label for="province">Pilih Provinsi</label>
+                  <select class="form-control" id="province">
+                    <option selected value>Pilih Provinsi ...</option>
+                    <option>Jawa Barat</option>
+                    <option>Jawa Timur</option>
+                    <option>Jawa Tengah</option>
+                    <option>Aceh</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city">Pilih Kabupaten / Kota</label>
+                  <select class="form-control" id="city">
+                    <option selected value>Pilih Kab/Kota ...</option>
+                    <option>Jawa Barat</option>
+                    <option>Jawa Timur</option>
+                    <option>Jawa Tengah</option>
+                    <option>Aceh</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Jenis Rawat Inap</label>
+                  <div class="row">
+                    <div class="col col-lg-5 col-xl-4">
+                      <button class="form-check btn" type="button">
+                        <input class="" type="radio" name="exampleRadios" id="covid" value="inpatient" checked>
+                        <label class="form-check-label" for="covid">
+                          Covid
+                        </label>
+                      </button>
+                    </div>
+                    <div class="col col-lg-5 col-xl-4">
+                      <button class="form-check btn" type="button" for="non-covid">
+                        <input class="" type="radio" name="exampleRadios" id="non-covid" value="inpatient">
+                        <label class="form-check-label" for="non-covid">
+                          Non - Covid
+                        </label>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col text-center">
+                    <button class="btn btn-search">Cari</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </section>
+    </main>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -62,6 +130,7 @@
 
     <!-- script iconify -->
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="../resource/js/main.js"></script>
 
   </body>
 

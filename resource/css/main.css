@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "Poppins", arial, sans-serif;
 }
@@ -40,6 +40,72 @@ body {
 .hotline:hover {
   border: 1px solid red !important;
   background-color: #ffdada;
+}
+
+main {
+  min-height: 460px;
+}
+
+/* search-bar */
+.search-bar {
+  padding-top: 200px;
+  height: 1024px;
+  background: linear-gradient(rgba(173, 173, 173, 0.6), rgba(173, 173, 173, 0.6)), url("../img/hero.jpg");
+  background-position: 0 0;
+  background-size: cover;
+}
+.search-bar header {
+  margin-bottom: 60px;
+}
+.search-bar header h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.search-form .form-group {
+  margin-bottom: 40px;
+}
+.search-form .form-group label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.search-form .form-group select {
+  display: block;
+  height: 54px;
+}
+.search-form .form-check {
+  width: 100%;
+  background-color: #FE0B0B;
+  padding: 15px;
+  padding-left: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.search-form .form-check input {
+  margin: 0 10px 0 0;
+  padding: 0;
+  background-color: green;
+}
+.search-form .form-check label {
+  cursor: pointer;
+}
+.search-form .btn-search {
+  margin-top: 100px;
+  width: 410px;
+  background-color: #FE0B0B;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.search-form .btn-search:hover {
+  background-color: #e20000;
+}
+.search-form .btn-search:active {
+  background-color: #a70000;
 }
 
 /*# sourceMappingURL=main.css.map */
