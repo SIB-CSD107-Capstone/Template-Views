@@ -12,7 +12,7 @@
 
   /* search bar */
   .search-bar {
-    height: 900px !important;
+    height: 860px !important;
 
     header {
       h2 {
@@ -59,8 +59,32 @@
       width: 410px;
       font-size: 20px;
       border-radius: 6px;
-
-
     }
   }
+
+  /* statistics section */
+  .statistics {
+    header {
+      h2 {
+        font-size: 30px !important;
+      }
+    }
+
+    h3 {
+      font-size: 20px !important;
+    }
+
+    .card {
+      // padding: 2px !important;
+
+      .card-title {
+        font-size: 16px;
+      }
+
+      .card-text {
+        font-size: 18px;
+      }
+    }
+  }
+
 }

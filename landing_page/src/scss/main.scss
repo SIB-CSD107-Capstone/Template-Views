@@ -13,47 +13,73 @@ body {
     color: colors.$primary-color;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    color: colors.$secondary-color !important;
-}
+// Navigation | Navbar
+.custom-nav {
+    padding: 2em 0 2em 0;
 
-.active a {
-    color: colors.$secondary-color !important;
-}
-
-.nav-item {
-    box-sizing: border-box;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    margin-left: 45px;
-    cursor: pointer;
-
-    &:hover {
-        border-top: 4px solid colors.$secondary-color;
-    }
-}
-
-
-
-.hotline {
-    border-radius: 30px;
-    height: min-content;
-    border: 1px solid red;
-    margin: auto 0;
-    margin-left: 45px;
-    color: colors.$secondary-color;
-    padding: 0 20px;
-
-    a {
-        color: colors.$secondary-color !important;
+    .navbar-brand {
+        img {
+            width: 10.375rem;
+            height: 2.5em;
+        }
     }
 
-    &:hover {
-        border: 1px solid red !important;
-        background-color: rgb(255, 218, 218);
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-weight: 400;
+                    color: colors.$secondary-color;
+                    padding: 1em;
+                    text-align: center;
+                    transition: 0.2s ease;
+                    -webkit-transition: 0.2s ease;
+                    -moz-transition: 0.2s ease;
+                    -ms-transition: 0.2s ease;
+                    -o-transition: 0.2s ease;
+
+                    &.active {
+                        font-weight: 600;
+                        color: colors.$secondary-color;
+                    }
+
+                    &:hover {
+                        color: colors.$secondary-color;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        margin-right: 1em;
+                    }
+                }
+
+                .hotline-btn {
+                    border: 2px solid colors.$secondary-color;
+                    background-color: transparent;
+                    height: 3em;
+                    width: 8em;
+                    margin: 0 auto;
+                    color: colors.$secondary-color;
+                    transition: 0.5s ease;
+                    -webkit-transition: 0.5s ease;
+                    -moz-transition: 0.5s ease;
+                    -ms-transition: 0.5s ease;
+                    -o-transition: 0.5s ease;
+
+                    .icon-phone {
+                        margin-right: 0.75em;
+                    }
+
+                    &:hover {
+                        background-color: colors.$secondary-color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        padding: .5rem;
     }
 }
 
@@ -64,8 +90,8 @@ main {
 /* search-bar */
 
 .search-bar {
-    padding-top: 160px;
-    height: 1024px;
+    padding-top: 120px;
+    height: 960px;
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(243, 243, 243, 0.6)), url('../img/hero.jpg');
     background-position: 0 0;
     background-size: cover;
@@ -74,7 +100,6 @@ main {
         margin-bottom: 60px;
 
         h2 {
-            text-align: center;
             font-size: 60px;
             font-weight: map-get($map: $font-weights, $key: 'bold');
         }
@@ -148,7 +173,7 @@ main {
     min-height: 720px;
 
     header {
-        margin-bottom: 100px;
+        margin-bottom: 90px;
 
         h2 {
             font-size: 40px;
@@ -200,6 +225,98 @@ main {
 
         &:hover {
             background-color: rgb(187, 7, 7);
+        }
+    }
+}
+
+// Footer Section
+footer {
+    .footer-up {
+        background-color: fade-out($color: colors.$fourth-color, $amount: 0.7);
+        padding: 2.5rem 0;
+        text-align: center;
+
+        img {
+            height: 3.5rem;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            font-size: 0.75rem;
+            margin-bottom: 1.5rem;
+            color: colors.$third-color;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+        }
+
+        h4 {
+            color: colors.$primary-color;
+            font-weight: bold;
+            font-size: 1.25rem;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: .5rem;
+
+                a {
+                    text-decoration: none;
+                    color: colors.$third-color;
+                    font-size: .75rem;
+
+                    &:hover {
+                        color: darken($color: colors.$third-color, $amount: 30%);
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+            text-align: left;
+        }
+    }
+
+    .footer-bottom {
+        background-color: colors.$primary-color;
+        color: white;
+        height: 6rem;
+        padding: 1rem;
+
+        .content-foo-bottom {
+            padding: 0;
+
+            p {
+                margin-bottom: 0;
+                font-size: .75rem;
+                font-weight: bold;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .github {
+                margin-bottom: .5rem;
+
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
