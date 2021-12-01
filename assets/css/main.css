@@ -48,6 +48,7 @@
 }
 body {
   font-family: "Poppins", arial, sans-serif;
+  color: #121E2A;
 }
 
 .navbar-brand {
@@ -144,6 +145,51 @@ main {
   font-size: 20px;
   font-weight: 600;
   border-radius: 6px;
+}
+
+/* Statistics Section */
+.statistics {
+  min-height: 720px;
+}
+.statistics header {
+  margin-bottom: 100px;
+}
+.statistics header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #121E2A;
+}
+.statistics h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.statistics .card .card-title,
+.statistics .card .card-text {
+  font-weight: 600;
+}
+.statistics .confirmed {
+  cursor: pointer;
+}
+.statistics .confirmed:hover {
+  background-color: #5b5bfa;
+}
+.statistics .treated {
+  cursor: pointer;
+}
+.statistics .treated:hover {
+  background-color: #00c3ff;
+}
+.statistics .healed {
+  cursor: pointer;
+}
+.statistics .healed:hover {
+  background-color: #23b623;
+}
+.statistics .died {
+  cursor: pointer;
+}
+.statistics .died:hover {
+  background-color: #bb0707;
 }
 
 /*# sourceMappingURL=main.css.map */

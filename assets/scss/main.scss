@@ -10,11 +10,8 @@ $font-weights: ('light': 300,
 
 body {
     font-family: "Poppins", arial, sans-serif;
+    color: colors.$primary-color;
 }
-
-// .navbar {
-//     width: 100vh;
-// }
 
 .navbar-brand {
     display: flex;
@@ -62,8 +59,6 @@ body {
 
 main {
     min-height: 460px;
-
-
 }
 
 /* search-bar */
@@ -142,5 +137,69 @@ main {
         // &:active {
         //     background-color: rgb(167, 0, 0);
         // }
+    }
+
+
+}
+
+/* Statistics Section */
+
+.statistics {
+    min-height: 720px;
+
+    header {
+        margin-bottom: 100px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: map-get($map: $font-weights, $key: 'bold');
+            color: colors.$primary-color;
+        }
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: map-get($map: $font-weights, $key: 'semi-bold');
+    }
+
+    .card {
+
+        .card-title,
+        .card-text {
+            font-weight: map-get($map: $font-weights, $key: 'semi-bold');
+            // font-size: 24px;
+        }
+    }
+
+    .confirmed {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(91, 91, 250);
+        }
+    }
+
+    .treated {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(0, 195, 255);
+        }
+    }
+
+    .healed {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(35, 182, 35);
+        }
+    }
+
+    .died {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(187, 7, 7);
+        }
     }
 }
