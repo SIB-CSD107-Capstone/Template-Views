@@ -492,4 +492,25 @@ footer .footer-bottom .content-foo-bottom .github {
   }
 }
 
+.modal-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-custom iframe {
+  height: 19.688em;
+  width: 16.8em;
+  margin: 0 auto;
+}
+@media screen and (min-width: 425px) {
+  .modal-custom iframe {
+    width: 24em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-custom iframe {
+    width: 29em;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
