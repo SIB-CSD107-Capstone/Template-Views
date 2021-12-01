@@ -87,16 +87,6 @@ body {
 .about-covid {
   margin-top: 1em;
 }
-@media screen and (min-width: 768px) {
-  .about-covid {
-    margin-top: 4em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-covid {
-    margin-top: 4.5em;
-  }
-}
 .about-covid .wrap-about {
   flex-direction: column-reverse;
 }
@@ -168,22 +158,20 @@ body {
     margin-top: 0;
   }
 }
-
-.blog-post,
-.video-post {
-  margin-top: 3em;
-}
 @media screen and (min-width: 768px) {
-  .blog-post,
-.video-post {
+  .about-covid {
     margin-top: 4em;
   }
 }
 @media screen and (min-width: 1200px) {
-  .blog-post,
-.video-post {
+  .about-covid {
     margin-top: 4.5em;
   }
+}
+
+.blog-post,
+.video-post {
+  margin-top: 3em;
 }
 .blog-post p:first-child,
 .video-post p:first-child {
@@ -227,6 +215,18 @@ body {
   .blog-post h2,
 .video-post h2 {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog-post,
+.video-post {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-post,
+.video-post {
+    margin-top: 4.5em;
   }
 }
 
@@ -362,16 +362,6 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-@media screen and (min-width: 768px) {
-  .search-hospital {
-    margin-top: 4em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .search-hospital {
-    margin-top: 4.5em;
-  }
-}
 .search-hospital h1 {
   color: white;
   font-weight: bold;
@@ -410,6 +400,12 @@ body {
 @media screen and (min-width: 768px) {
   .search-hospital {
     padding: 2.5em 12em;
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .search-hospital {
+    margin-top: 4.5em;
   }
 }
 
