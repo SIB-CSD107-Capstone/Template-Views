@@ -164,4 +164,110 @@ body {
   }
 }
 
+.blog-post {
+  margin-top: 3em;
+}
+@media screen and (min-width: 768px) {
+  .blog-post {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-post {
+    margin-top: 4.5em;
+  }
+}
+.blog-post p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .blog-post p:first-child {
+    font-size: 1rem;
+  }
+}
+.blog-post h2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.blog-post h2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .blog-post h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .blog-post h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-post h2 {
+    font-size: 2rem;
+  }
+}
+
+.custom-blog-post img {
+  height: 18.375em;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 1em;
+}
+.custom-blog-post h3 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+.custom-blog-post h3 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .custom-blog-post h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .custom-blog-post h3 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .custom-blog-post h3 {
+    font-size: 1.25rem;
+  }
+}
+.custom-blog-post p {
+  color: #6C757D;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .custom-blog-post p {
+    font-size: 1rem;
+  }
+}
+.custom-blog-post .read-btn {
+  padding: 0.7em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
