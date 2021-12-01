@@ -25,4 +25,58 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.custom-nav {
+  padding: 2em 0 0 0;
+}
+.custom-nav .navbar-brand img {
+  width: 10.375rem;
+  height: 2.5em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  color: #121E2A;
+  padding: 1em;
+  text-align: center;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link.active {
+  font-weight: 600;
+  color: #FE0B0B;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FE0B0B;
+}
+@media screen and (min-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-right: 1em;
+  }
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn {
+  border: 2px solid #FE0B0B;
+  background-color: transparent;
+  height: 3em;
+  width: 8em;
+  margin: 0 auto;
+  color: #FE0B0B;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn .icon-phone {
+  margin-right: 0.75em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn:hover {
+  background-color: #FE0B0B;
+  color: white;
+}
+.custom-nav .navbar-toggler {
+  padding: 0.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */
