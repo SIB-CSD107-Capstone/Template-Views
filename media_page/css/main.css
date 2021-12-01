@@ -344,4 +344,68 @@ body {
   }
 }
 
+.search-hospital {
+  margin-top: 3em;
+  margin-bottom: 4.5em;
+  padding: 2em;
+  background-color: #121E2A;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .search-hospital {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .search-hospital {
+    margin-top: 4.5em;
+  }
+}
+.search-hospital h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.search-hospital h1 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .search-hospital h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .search-hospital h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .search-hospital h1 {
+    font-size: 2.5rem;
+  }
+}
+.search-hospital p {
+  margin-bottom: 2em;
+}
+.search-hospital .to-search-btn {
+  padding: 1em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .search-hospital {
+    padding: 2.5em 12em;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
