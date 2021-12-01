@@ -1,4 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@media (max-width: 768px) {
+  .search-bar header h2 {
+    font-size: 48px !important;
+  }
+}
+@media (max-width: 510px) {
+  /* search bar */
+  .search-bar {
+    height: 900px !important;
+  }
+  .search-bar header h2 {
+    font-size: 30px !important;
+  }
+
+  .search-form .form-group {
+    margin-bottom: 40px;
+  }
+  .search-form .form-group label {
+    font-size: 16px !important;
+  }
+  .search-form .form-group select {
+    display: block;
+    height: 40px;
+  }
+  .search-form .form-check {
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .search-form .form-check input {
+    margin-right: 8px !important;
+  }
+  .search-form .form-check label {
+    margin: 0 !important;
+    font-size: 14px !important;
+    cursor: pointer;
+  }
+  .search-form .btn-search {
+    margin-top: 100px;
+    width: 410px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+}
 body {
   font-family: "Poppins", arial, sans-serif;
 }
@@ -48,9 +95,9 @@ main {
 
 /* search-bar */
 .search-bar {
-  padding-top: 200px;
+  padding-top: 160px;
   height: 1024px;
-  background: linear-gradient(rgba(173, 173, 173, 0.6), rgba(173, 173, 173, 0.6)), url("../img/hero.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(243, 243, 243, 0.6)), url("../img/hero.jpg");
   background-position: 0 0;
   background-size: cover;
 }
@@ -71,13 +118,12 @@ main {
   font-weight: 600;
 }
 .search-form .form-group select {
-  display: block;
   height: 54px;
+  cursor: pointer;
 }
 .search-form .form-check {
   width: 100%;
-  background-color: #FE0B0B;
-  padding: 15px;
+  padding: 10px;
   padding-left: 20px;
   display: flex !important;
   align-items: center;
@@ -87,25 +133,17 @@ main {
 }
 .search-form .form-check input {
   margin: 0 10px 0 0;
-  padding: 0;
-  background-color: green;
 }
 .search-form .form-check label {
   cursor: pointer;
 }
 .search-form .btn-search {
-  margin-top: 100px;
+  margin-top: 90px;
   width: 410px;
-  background-color: #FE0B0B;
+  max-width: 90vw;
   font-size: 20px;
   font-weight: 600;
   border-radius: 6px;
-}
-.search-form .btn-search:hover {
-  background-color: #e20000;
-}
-.search-form .btn-search:active {
-  background-color: #a70000;
 }
 
 /*# sourceMappingURL=main.css.map */

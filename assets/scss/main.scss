@@ -1,5 +1,5 @@
-@use './colors';
 @use './responsive';
+@use './colors';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 $font-weights: ('light': 300,
@@ -11,6 +11,10 @@ $font-weights: ('light': 300,
 body {
     font-family: "Poppins", arial, sans-serif;
 }
+
+// .navbar {
+//     width: 100vh;
+// }
 
 .navbar-brand {
     display: flex;
@@ -59,14 +63,15 @@ body {
 main {
     min-height: 460px;
 
+
 }
 
 /* search-bar */
 
 .search-bar {
-    padding-top: 200px;
+    padding-top: 160px;
     height: 1024px;
-    background: linear-gradient(rgba(173, 173, 173, 0.6), rgba(173, 173, 173, 0.6)), url('../img/hero.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(243, 243, 243, 0.6)), url('../img/hero.jpg');
     background-position: 0 0;
     background-size: cover;
 
@@ -93,15 +98,16 @@ main {
         }
 
         select {
-            display: block;
+            // display: block;
             height: 54px;
+            cursor: pointer;
         }
     }
 
     .form-check {
         width: 100%;
-        background-color: colors.$secondary-color;
-        padding: 15px;
+        // background-color: colors.$secondary-color;
+        padding: 10px;
         padding-left: 20px;
         display: flex !important;
         align-items: center;
@@ -111,8 +117,8 @@ main {
 
         input {
             margin: 0 10px 0 0;
-            padding: 0;
-            background-color: green;
+            // padding: 0;
+            // background-color: green;
         }
 
         label {
@@ -121,19 +127,20 @@ main {
     }
 
     .btn-search {
-        margin-top: 100px;
+        margin-top: 90px;
         width: 410px;
-        background-color: colors.$secondary-color;
+        max-width: 90vw;
+        // background-color: colors.$secondary-color;
         font-size: 20px;
         font-weight: map-get($map: $font-weights, $key: 'semi-bold');
         border-radius: 6px;
 
-        &:hover {
-            background-color: rgb(226, 0, 0);
-        }
+        // &:hover {
+        //     background-color: rgb(226, 0, 0);
+        // }
 
-        &:active {
-            background-color: rgb(167, 0, 0);
-        }
+        // &:active {
+        //     background-color: rgb(167, 0, 0);
+        // }
     }
 }
