@@ -1,8 +1,13 @@
 @use './colors';
 
 // Navigation | Navbar
+.header {
+  box-shadow: 0 4px 4px 0px rgba($color: #000000, $alpha: .1);
+}
+
 .custom-nav {
   padding: 2em 0 2em 0;
+
 
   .navbar-brand {
     img {
