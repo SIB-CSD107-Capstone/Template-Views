@@ -1,0 +1,33 @@
+@use './colors';
+@use './responsive';
+@use './navbar';
+@use './footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: colors.$primary-color;
+}
+
+
+.favorite-hospital {
+
+
+  .search-favorite-hospital {
+    input {
+      outline: 0;
+    }
+
+    .search-icon {
+      width: 1.6em;
+      font-size: 1.6em;
+      padding-right: 8px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.header {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.custom-nav {
+  padding: 2em 0 2em 0;
+}
+.custom-nav .navbar-brand img {
+  width: 10.375rem;
+  height: 2.5em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  color: #121E2A;
+  padding: 1em;
+  text-align: center;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link.active {
+  font-weight: 600;
+  color: #FE0B0B;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FE0B0B;
+}
+@media screen and (min-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-right: 1em;
+  }
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn {
+  border: 2px solid #FE0B0B;
+  background-color: transparent;
+  height: 3em;
+  width: 8em;
+  margin: 0 auto;
+  color: #FE0B0B;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn .icon-phone {
+  margin-right: 0.75em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn:hover {
+  background-color: #FE0B0B;
+  color: white;
+}
+.custom-nav .navbar-toggler {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .custom-nav {
+    padding: 2em 0 0 0;
+  }
+}
+
+footer .footer-up {
+  background-color: rgba(196, 196, 196, 0.3);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer .footer-up img {
+  height: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .footer-up p {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #6C757D;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+footer .footer-up h4 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up h4 {
+    font-size: 1.5rem;
+  }
+}
+footer .footer-up ul {
+  padding: 0;
+}
+footer .footer-up ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+footer .footer-up ul li a {
+  text-decoration: none;
+  color: #6C757D;
+  font-size: 0.75rem;
+}
+footer .footer-up ul li a:hover {
+  color: #25282b;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up ul li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up {
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    text-align: left;
+  }
+}
+footer .footer-bottom {
+  background-color: #121E2A;
+  color: white;
+  height: 6rem;
+  padding: 1rem;
+}
+footer .footer-bottom .content-foo-bottom {
+  padding: 0;
+}
+footer .footer-bottom .content-foo-bottom p {
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-bottom .content-foo-bottom p {
+    font-size: 1rem;
+  }
+}
+footer .footer-bottom .content-foo-bottom .github {
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-bottom .content-foo-bottom .github {
+    margin-bottom: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: #121E2A;
+}
+
+.favorite-hospital .search-favorite-hospital input {
+  outline: 0;
+}
+.favorite-hospital .search-favorite-hospital .search-icon {
+  width: 1.6em;
+  font-size: 1.6em;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=favorite.css.map */
