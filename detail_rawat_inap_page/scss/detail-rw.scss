@@ -12,6 +12,7 @@ body {
 }
 
 .detail-rawat-inap {
+
   .btn-back {
     display: block;
   }
@@ -68,13 +69,15 @@ body {
         p {
           font-weight: bold;
         }
+
+        p:last-child {
+          font-size: 1.6em;
+        }
       }
 
       .bed {
         width: 140px;
       }
-
-
     }
   }
 
