@@ -1,0 +1,401 @@
+//! Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Variables
+$primary-color: #121E2A;
+$secondary-color: #FE0B0B;
+$third-color: #6C757D;
+$fourth-color: #C4C4C4;
+
+//! Mixins
+@mixin box-border {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin box-inherit {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@mixin margin-section($mtSize: 3em) {
+  margin-top: $mtSize;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 4.5em;
+  }
+}
+
+@mixin heading($fontSize, $mBottom, $color: $primary-color) {
+  color: $color;
+  font-weight: bold;
+  font-size: $fontSize;
+  margin-bottom: $mBottom;
+
+  .d-red {
+    color: $secondary-color;
+    margin-left: -0.2em;
+  }
+}
+
+@mixin sub-heading($fontSize) {
+  color: $secondary-color;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: $fontSize;
+}
+
+@mixin solid-btn($paddingSize) {
+  padding: $paddingSize;
+  min-height: 44px;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-weight: bold;
+}
+
+//! Styles
+html {
+  @include box-border();
+}
+
+* {
+  @include box-inherit();
+
+  &:before {
+    @include box-inherit();
+  }
+
+  &:after {
+    @include box-inherit();
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+// Navigation | Navbar
+.custom-nav {
+  padding: 2em 0 2em 0;
+
+  .navbar-brand {
+    img {
+      width: 10.375rem;
+      height: 2.5em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: 400;
+          color: $primary-color;
+          padding: 1em;
+          text-align: center;
+          transition: 0.2s ease;
+          -webkit-transition: 0.2s ease;
+          -moz-transition: 0.2s ease;
+          -ms-transition: 0.2s ease;
+          -o-transition: 0.2s ease;
+
+          &.active {
+            font-weight: 600;
+            color: $secondary-color;
+          }
+
+          &:hover {
+            color: $secondary-color;
+          }
+
+          @media screen and (min-width: 992px) {
+            margin-right: 1em;
+          }
+        }
+
+        .hotline-btn {
+          border: 2px solid $secondary-color;
+          background-color: transparent;
+          height: 3em;
+          width: 8em;
+          margin: 0 auto;
+          color: $secondary-color;
+          transition: 0.5s ease;
+          -webkit-transition: 0.5s ease;
+          -moz-transition: 0.5s ease;
+          -ms-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+
+          .icon-phone {
+            margin-right: 0.75em;
+          }
+
+          &:hover {
+            background-color: $secondary-color;
+            color: white;
+          }
+        }
+      }
+
+    }
+  }
+
+  .navbar-toggler {
+    padding: .5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 2em 0 0 0;
+  }
+}
+
+// Blog Detail
+.blog-detail {
+  @include margin-section();
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+
+  .sub-detail {
+    @include sub-heading($fontSize: 0.75rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  h1 {
+    @include heading($fontSize: 1.5rem, $mBottom: .5rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .date-detail {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $third-color;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 425px) {
+      height: 19em;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 20rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 2rem;
+      height: 25.625rem;
+    }
+  }
+
+  .blog-text {
+    color: $third-color;
+    font-size: .9rem;
+
+    @media screen and (min-width: 425px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .komentar {
+    @include margin-section();
+
+    h2 {
+      @include heading($fontSize: 1.5rem, $mBottom: 1rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 2rem;
+      }
+    }
+
+    .custom-komen {
+      padding: 1em;
+      height: 10rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-komen {
+      @include solid-btn(.5em);
+      width: 5em;
+    }
+  }
+
+  .komentar-terbaru {
+    @include margin-section();
+
+    h2 {
+      @include heading($fontSize: 1.5rem, $mBottom: 1rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .card-komen {
+    box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    h3 {
+      @include heading($fontSize: 1.5rem, $mBottom: .5rem);
+    }
+
+    .date-komen {
+      @include sub-heading($fontSize: .75rem);
+    }
+
+    p {
+      color: $third-color;
+      margin-top: 1em;
+    }
+  }
+}
+
+// Footer Section
+footer {
+  .footer-up {
+    background-color: fade-out($color: $fourth-color, $amount: 0.7);
+    padding: 2.5rem 0;
+    text-align: center;
+
+    img {
+      height: 3.5rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: $third-color;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 1.25rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: .5rem;
+
+        a {
+          text-decoration: none;
+          color: $third-color;
+          font-size: .75rem;
+
+          &:hover {
+            color: darken($color: $third-color, $amount: 30%);
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+      text-align: left;
+    }
+  }
+
+  .footer-bottom {
+    background-color: $primary-color;
+    color: white;
+    height: 6rem;
+    padding: 1rem;
+
+    .content-foo-bottom {
+      padding: 0;
+
+      p {
+        margin-bottom: 0;
+        font-size: .75rem;
+        font-weight: bold;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      .github {
+        margin-bottom: .5rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
