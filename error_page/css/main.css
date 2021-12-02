@@ -84,4 +84,58 @@ body {
   }
 }
 
+.main-error {
+  margin-top: 3em;
+  text-align: center;
+  margin-bottom: 4.5em;
+}
+.main-error h1 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main-error h1 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .main-error h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-error h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-error h1 {
+    font-size: 2.5rem;
+  }
+}
+.main-error .back-btn {
+  padding: 0.5em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .main-error .back-btn {
+    padding: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-error {
+    margin-top: 2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-error {
+    margin-top: 2.5em;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
