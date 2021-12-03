@@ -223,3 +223,152 @@ body {
     }
   }
 }
+
+// Fitur Web Section
+.fitur-web {
+  @include margin-section();
+
+  p:first-child {
+    @include sub-heading($fontSize: 0.75rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  h2 {
+    @include heading($fontSize: 1.5rem, $mBottom: 1.5rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.3rem;
+    }
+  }
+
+  .fitur-card {
+    @include margin-section();
+
+    .logo-fitur {
+      background-color: $secondary-color;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      @media screen and (min-width: 768px) {
+        width: 6.25rem;
+        height: 6.25rem;
+      }
+    }
+
+    .body-fitur {
+      padding-top: 2rem;
+
+      h3 {
+        @include heading($fontSize: 1.25rem, $mBottom: .5rem);
+        line-height: 2rem;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.5rem;
+        }
+
+        @media screen and (min-width: 992px) {
+          font-size: 1.25rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Team Pengembang Section
+.team-pengembang {
+  @include margin-section();
+
+  p:first-child {
+    @include sub-heading($fontSize: 0.75rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  h2 {
+    @include heading($fontSize: 1.5rem, $mBottom: 1.5rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.3rem;
+    }
+  }
+
+  .team-card {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+
+    img {
+      border-radius: 10px 10px 0 0;
+      -webkit-border-radius: 10px 10px 0 0;
+      -moz-border-radius: 10px 10px 0 0;
+      -ms-border-radius: 10px 10px 0 0;
+      -o-border-radius: 10px 10px 0 0;
+      height: 12rem;
+
+      @media screen and (min-width: 1024px) {
+        height: 15rem;
+      }
+    }
+
+    .team-name {
+      @include heading($fontSize: 1.25rem, $mBottom: .5rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: 1.25rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .team-id {
+      @include sub-heading($fontSize: 0.75rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
