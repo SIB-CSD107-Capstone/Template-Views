@@ -8,9 +8,81 @@ $third-color: #6C757D;
 $fourth-color: #C4C4C4;
 
 //! Mixins
+//! Mixins
 @mixin box-border {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+@mixin box-inherit {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@mixin margin-section($mtSize: 3em) {
+  margin-top: $mtSize;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 4.5em;
+  }
+}
+
+@mixin heading($fontSize, $mBottom, $color: $primary-color) {
+  color: $color;
+  font-weight: bold;
+  font-size: $fontSize;
+  margin-bottom: $mBottom;
+
+  .d-red {
+    color: $secondary-color;
+    margin-left: -0.2em;
+  }
+}
+
+@mixin sub-heading($fontSize) {
+  color: $secondary-color;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: $fontSize;
+}
+
+@mixin text-content($fontSize) {
+  color: $third-color;
+  font-weight: 400;
+  font-size: $fontSize;
+}
+
+@mixin solid-btn($paddingSize) {
+  padding: $paddingSize;
+  min-height: 44px;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-weight: bold;
+}
+
+//! Styles
+html {
+  @include box-border();
+}
+
+* {
+  @include box-inherit();
+
+  &:before {
     @include box-inherit();
+  }
+
+  &:after {
+    @include box-inherit();
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
