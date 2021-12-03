@@ -84,6 +84,98 @@ body {
   }
 }
 
+.pencarian-rs {
+  margin-top: 1rem;
+  background-color: #121E2A;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 3rem 0;
+}
+.pencarian-rs h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  line-height: 3rem;
+  margin-bottom: 3.5rem;
+}
+.pencarian-rs h1 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .pencarian-rs h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pencarian-rs h1 {
+    font-size: 2rem;
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pencarian-rs h1 {
+    font-size: 2.5rem;
+  }
+}
+.pencarian-rs .container-search {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.pencarian-rs .btn-cari {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.pencarian-rs .btn-cari:active {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+.pencarian-rs .btn-cari:active:focus {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+.pencarian-rs .btn-cari:visited {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .pencarian-rs {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pencarian-rs {
+    margin-top: 4.5em;
+  }
+}
+
 .hasil-pencarian {
   margin-top: 3em;
   color: #121E2A;

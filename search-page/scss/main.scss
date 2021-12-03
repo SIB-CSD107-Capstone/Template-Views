@@ -154,6 +154,77 @@ body {
   }
 }
 
+// Pencarian RS
+.pencarian-rs {
+  @include margin-section(1rem);
+  background-color: $primary-color;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 3rem 0;
+
+  h1 {
+    @include heading($fontSize: 1.5rem, $mBottom: .5rem, $color: white);
+    padding: 0;
+    line-height: 3rem;
+    margin-bottom: 3.5rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;
+      padding: 0 5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .container-search {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .btn-cari {
+    @include solid-btn(.5rem);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    &:active {
+      @include solid-btn(.5rem);
+    }
+
+    &:active:focus {
+      @include solid-btn(.5rem);
+    }
+
+    &:visited {
+      @include solid-btn(.5rem);
+    }
+  }
+
+  @media screen and(min-width: 768px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 4.5em;
+  }
+}
+
 // Hasil Pencarian
 .hasil-pencarian {
   @include margin-section();
