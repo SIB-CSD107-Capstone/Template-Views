@@ -1,0 +1,431 @@
+//! Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Variables
+$primary-color: #121E2A;
+$secondary-color: #FE0B0B;
+$third-color: #6C757D;
+$fourth-color: #C4C4C4;
+
+//! Mixins
+//! Mixins
+@mixin box-border {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin box-inherit {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@mixin margin-section($mtSize: 3em) {
+  margin-top: $mtSize;
+}
+
+@mixin heading($fontSize, $mBottom, $color: $primary-color) {
+  color: $color;
+  font-weight: bold;
+  font-size: $fontSize;
+  margin-bottom: $mBottom;
+
+  .d-red {
+    color: $secondary-color;
+    margin-left: -0.2em;
+  }
+}
+
+@mixin sub-heading($fontSize) {
+  color: $secondary-color;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: $fontSize;
+}
+
+@mixin text-content($fontSize) {
+  color: $third-color;
+  font-weight: 400;
+  font-size: $fontSize;
+}
+
+@mixin solid-btn($paddingSize) {
+  padding: $paddingSize;
+  min-height: 44px;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-weight: bold;
+}
+
+//! Styles
+html {
+  @include box-border();
+}
+
+* {
+  @include box-inherit();
+
+  &:before {
+    @include box-inherit();
+  }
+
+  &:after {
+    @include box-inherit();
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+// Navigation | Navbar
+.custom-nav {
+  padding: 2em 0 2em 0;
+
+  .navbar-brand {
+    img {
+      width: 10.375rem;
+      height: 2.5em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: 400;
+          color: $primary-color;
+          padding: 1em;
+          text-align: center;
+          transition: 0.2s ease;
+          -webkit-transition: 0.2s ease;
+          -moz-transition: 0.2s ease;
+          -ms-transition: 0.2s ease;
+          -o-transition: 0.2s ease;
+
+          &.active {
+            font-weight: 600;
+            color: $secondary-color;
+          }
+
+          &:hover {
+            color: $secondary-color;
+          }
+
+          @media screen and (min-width: 992px) {
+            margin-right: 1em;
+          }
+        }
+
+        .hotline-btn {
+          border: 2px solid $secondary-color;
+          background-color: transparent;
+          height: 3em;
+          width: 8em;
+          margin: 0 auto;
+          color: $secondary-color;
+          transition: 0.5s ease;
+          -webkit-transition: 0.5s ease;
+          -moz-transition: 0.5s ease;
+          -ms-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+
+          .icon-phone {
+            margin-right: 0.75em;
+          }
+
+          &:hover {
+            background-color: $secondary-color;
+            color: white;
+          }
+        }
+      }
+
+    }
+  }
+
+  .navbar-toggler {
+    padding: .5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 2em 0 0 0;
+  }
+}
+
+// Pencarian RS
+.pencarian-rs {
+  @include margin-section(1rem);
+  background-color: $primary-color;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 3rem 0;
+
+  h1 {
+    @include heading($fontSize: 1.5rem, $mBottom: .5rem, $color: white);
+    padding: 0;
+    line-height: 3rem;
+    margin-bottom: 3.5rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;
+      padding: 0 5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .container-search {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .btn-cari {
+    @include solid-btn(.5rem);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    &:active {
+      @include solid-btn(.5rem);
+    }
+
+    &:active:focus {
+      @include solid-btn(.5rem);
+    }
+
+    &:visited {
+      @include solid-btn(.5rem);
+    }
+  }
+
+  @media screen and(min-width: 768px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 4.5em;
+  }
+}
+
+// Hasil Pencarian
+.hasil-pencarian {
+  @include margin-section();
+  color: $primary-color;
+
+  p:first-child {
+    @include sub-heading($fontSize: 0.75rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  h2 {
+    @include heading($fontSize: 1.5rem, $mBottom: 1.5rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.3rem;
+    }
+  }
+
+  .search-card {
+    box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+
+    .input-rs {
+      outline: none;
+
+      &::placeholder {
+        font-weight: bold;
+        color: $fourth-color;
+      }
+    }
+  }
+
+  // Card-Kamar
+  .card-kamar {
+    box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid $fourth-color;
+
+    .nama-rs {
+      @include heading($fontSize: 1.25rem, $mBottom: .5rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .alamat-rs {
+      @include heading($fontSize: .8rem, $mBottom: .5rem);
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: .8rem;
+      }
+    }
+
+    .update-rs {
+      @include heading($fontSize: .75rem, $mBottom: 1.25rem);
+      font-weight: 400;
+
+      @media screen and (min-width: 768px) {
+        font-size: .8rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: .8rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: .75rem;
+      }
+    }
+
+    .btn-rs-ready {
+      @include solid-btn($paddingSize: .5rem);
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    .btn-rs-not {
+      @include solid-btn($paddingSize: .5rem);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 4.5em;
+  }
+}
+
+// Footer Section
+footer {
+  .footer-up {
+    background-color: fade-out($color: $fourth-color, $amount: 0.7);
+    padding: 2.5rem 0;
+    text-align: center;
+
+    img {
+      height: 3.5rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: $third-color;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 1.25rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: .5rem;
+
+        a {
+          text-decoration: none;
+          color: $third-color;
+          font-size: .75rem;
+
+          &:hover {
+            color: darken($color: $third-color, $amount: 30%);
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+      text-align: left;
+    }
+  }
+
+  .footer-bottom {
+    background-color: $primary-color;
+    color: white;
+    height: 6rem;
+    padding: 1rem;
+
+    .content-foo-bottom {
+      padding: 0;
+
+      p {
+        margin-bottom: 0;
+        font-size: .75rem;
+        font-weight: bold;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      .github {
+        margin-bottom: .5rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
