@@ -372,3 +372,95 @@ body {
     }
   }
 }
+
+// Footer Section
+footer {
+  .footer-up {
+    background-color: fade-out($color: $fourth-color, $amount: 0.7);
+    padding: 2.5rem 0;
+    text-align: center;
+
+    img {
+      height: 3.5rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: $third-color;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 1.25rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: .5rem;
+
+        a {
+          text-decoration: none;
+          color: $third-color;
+          font-size: .75rem;
+
+          &:hover {
+            color: darken($color: $third-color, $amount: 30%);
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+      text-align: left;
+    }
+  }
+
+  .footer-bottom {
+    background-color: $primary-color;
+    color: white;
+    height: 6rem;
+    padding: 1rem;
+
+    .content-foo-bottom {
+      padding: 0;
+
+      p {
+        margin-bottom: 0;
+        font-size: .75rem;
+        font-weight: bold;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      .github {
+        margin-bottom: .5rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
