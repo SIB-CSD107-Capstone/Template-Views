@@ -146,6 +146,10 @@ footer .footer-bottom .content-foo-bottom .github {
   }
 }
 
+.bg-red {
+  background-color: #FE0B0B;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -163,6 +167,12 @@ body {
   font-size: 1.6em;
   padding-right: 8px;
   cursor: pointer;
+}
+.favorite-hospital .list-favorite-hospital {
+  margin-top: 5em;
+}
+.favorite-hospital .text-address {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=favorite.css.map */
