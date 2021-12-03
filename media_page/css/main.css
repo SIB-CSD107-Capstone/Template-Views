@@ -135,12 +135,12 @@ body {
 }
 @media screen and (min-width: 992px) {
   .about-covid .text-about h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .about-covid .text-about h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 .about-covid .text-about p:last-child {
