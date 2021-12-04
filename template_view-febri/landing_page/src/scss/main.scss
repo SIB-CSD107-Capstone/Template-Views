@@ -4,6 +4,25 @@
 @use './footer';
 @use './typography'as typo;
 @use './utils';
+@use './mixins';
+
+
+//! Styles
+html {
+    @include mixins.box-border();
+}
+
+* {
+    @include mixins.box-inherit();
+
+    &:before {
+        @include mixins.box-inherit();
+    }
+
+    &:after {
+        @include mixins.box-inherit();
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -12,6 +31,25 @@ html {
 body {
     font-family: "Poppins", arial, sans-serif;
     color: colors.$primary-color;
+}
+
+// Skip Link
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: colors.$secondary-color;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    min-width: 44px;
+    min-height: 44px;
+    font-weight: bold;
+    font-size: .75rem;
+
+    &:focus {
+        top: 10px;
+    }
 }
 
 
