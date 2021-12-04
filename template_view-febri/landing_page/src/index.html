@@ -55,11 +55,11 @@
     <!-- main section  -->
     <main id="main-content">
       <section id="search-bar" class="search-bar">
-        <header class="text-center px-2">
-          <h2>CEK KETERSEDIAAN RAWAT INAP RUMAH SAKIT</h2>
-        </header>
-        <div class="container">
 
+        <div class="container">
+          <header class="text-center px-2">
+            <h2 tabindex="0">CEK KETERSEDIAAN RAWAT INAP RUMAH SAKIT</h2>
+          </header>
 
           <div class="row justify-content-center">
             <div class="col col-xl-8">
@@ -86,11 +86,11 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Jenis Rawat Inap</label>
+                  <label tabindex="0">Jenis Rawat Inap</label>
                   <div class="row">
                     <div class="col col-lg-5 col-xl-4">
                       <button class="form-check btn btn-danger" type="button">
-                        <input class="" type="radio" name="exampleRadios" id="covid" value="inpatient" checked>
+                        <input class="" type="radio" name="inpatient" id="covid" value="covid" checked>
                         <label class="form-check-label" for="covid">
                           Covid
                         </label>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="col col-lg-5 col-xl-4">
                       <button class="form-check btn btn-danger" type="button">
-                        <input class="" type="radio" name="exampleRadios" id="non-covid" value="inpatient" checked>
+                        <input class="" type="radio" name="inpatient" id="non-covid" value="non-covid">
                         <label class="form-check-label" for="non-covid">
                           Non - Covid
                         </label>
@@ -109,7 +109,7 @@
 
                 <div class="row">
                   <div class="col text-center">
-                    <button class="btn btn-search btn-danger">Cari</button>
+                    <button type="button" class="btn btn-search btn-danger" aria-label="cari rumah sakit">Cari</button>
                   </div>
                 </div>
               </form>
@@ -122,7 +122,7 @@
       <!-- statistic section  -->
       <section id="statistics" class="statistics">
         <header class="mt-5">
-          <h2 class="text-center">
+          <h2 class="text-center" tabindex="0">
             Statistik <br> Kasus Covid 19 di Indonesia
           </h2>
         </header>
@@ -131,7 +131,7 @@
 
           <div class="row mb-3">
             <div class="col">
-              <h3>Total Kasus Covid 19 di Indonesia</h3>
+              <h3 tabindex="0">Total Kasus Covid 19 di Indonesia</h3>
             </div>
           </div>
 
@@ -139,16 +139,16 @@
             <div class="col-6 mb-4">
               <div class="card p-md-4 border border-primary confirmed">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-5">Kasus Terkonfirmasi</h4>
-                  <p class="card-text text-center h3">95002</p>
+                  <h4 class="card-title text-center mb-5" tabindex="0">Kasus Terkonfirmasi</h4>
+                  <p class="card-text text-center h3" tabindex="0">95002</p>
                 </div>
               </div>
             </div>
             <div class="col-6 mb-4">
               <div class="card p-md-4 border border-info treated h-100">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-5">Sedang dirawat</h4>
-                  <p class="card-text text-center h3">5000</p>
+                  <h4 class="card-title text-center mb-5" tabindex="0">Sedang dirawat</h4>
+                  <p class="card-text text-center h3" tabindex="0">5000</p>
                 </div>
               </div>
             </div>
@@ -158,16 +158,16 @@
             <div class="col-6 mb-4">
               <div class="card p-md-4 border border-success healed">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-5">Berhasil Sembuh</h4>
-                  <p class="card-text text-center h3">95002</p>
+                  <h4 class="card-title text-center mb-5" tabindex="0">Berhasil Sembuh</h4>
+                  <p class="card-text text-center h3" tabindex="0">95002</p>
                 </div>
               </div>
             </div>
             <div class="col-6 mb-4">
               <div class="card p-md-4 border border-danger died h-100">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-5">Meninggal</h4>
-                  <p class="card-text text-center h3">5000</p>
+                  <h4 class="card-title text-center mb-5" tabindex="0">Meninggal</h4>
+                  <p class="card-text text-center h3" tabindex="0">5000</p>
                 </div>
               </div>
             </div>
@@ -175,16 +175,17 @@
 
           <div class="row">
             <div class="col text-center">
-              <p>Untuk Melihat Peta Sebaran Covid 19 di Indonesia Bisa Klik <a href="https://covid19.go.id/peta-sebaran"
-                  target="_blank" rel="noopener">disini</a>
+              <p tabindex="0">Untuk Melihat Peta Sebaran Covid 19 di Indonesia Bisa Klik <a
+                  href="https://covid19.go.id/peta-sebaran" target="_blank" rel="noopener">disini</a>
               </p>
             </div>
           </div>
 
           <div class="row my-5">
             <div class="col bg-danger text-center p-5 rounded">
-              <p class="text-white">Pada masa pandemi ini ayo kita selalu menerapkan pola hidup sehat dengan menjalankan
-                5M (Memakai Masker, Mencuci Tangan, Menjaga Jarak,Menghindari Kerumunan,dan Mengurangi Mobilitas).</p>
+              <p class="text-white" tabindex="0">Pada masa pandemi ini ayo kita selalu menerapkan pola hidup sehat
+                dengan menjalankan
+                5M (Memakai Masker, Mencuci Tangan, Menjaga Jarak, Menghindari Kerumunan, dan Mengurangi Mobilitas).</p>
             </div>
           </div>
         </div>
@@ -203,7 +204,7 @@
             </div>
             <div class="col-12 col-md-7 d-flex justify-content-between">
               <div class="col-6 col-md-6">
-                <h4>Resource</h4>
+                <h4 tabindex="0">Resource</h4>
                 <ul>
                   <li><a href="#">Indonesia Lokal API</a></li>
                   <li><a href="#">API Covid Indonesia V2</a></li>
@@ -212,7 +213,7 @@
                 </ul>
               </div>
               <div class="col-6 col-md-6">
-                <h4>Referensi</h4>
+                <h4 tabindex="0">Referensi</h4>
                 <ul>
                   <li><a href="#">Indonesia Lokal API</a></li>
                   <li><a href="#">API Covid Indonesia V2</a></li>
