@@ -249,3 +249,41 @@ main {
     }
 
 }
+
+/* Favorite Hospital Style */
+.favorite-hospital {
+
+    .search-favorite-hospital {
+        box-shadow: 0 0 8px 0 rgba($color: #000000, $alpha: .6);
+
+
+        input {
+            outline: 0;
+        }
+
+        .search-icon {
+            width: 1.6em;
+            font-size: 1.6em;
+            padding-right: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .list-favorite-hospital {
+        margin-top: 5em;
+
+        .card {
+            cursor: pointer;
+
+            box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .6);
+
+            &:hover {
+                background-color: colors.$fourth-color;
+            }
+        }
+    }
+
+    .text-address {
+        font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
+    }
+}

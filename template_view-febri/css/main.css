@@ -412,4 +412,31 @@ main {
   width: 140px;
 }
 
+/* Favorite Hospital Style */
+.favorite-hospital .search-favorite-hospital {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+}
+.favorite-hospital .search-favorite-hospital input {
+  outline: 0;
+}
+.favorite-hospital .search-favorite-hospital .search-icon {
+  width: 1.6em;
+  font-size: 1.6em;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.favorite-hospital .list-favorite-hospital {
+  margin-top: 5em;
+}
+.favorite-hospital .list-favorite-hospital .card {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+.favorite-hospital .list-favorite-hospital .card:hover {
+  background-color: #C4C4C4;
+}
+.favorite-hospital .text-address {
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */
