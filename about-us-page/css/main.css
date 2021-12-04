@@ -25,6 +25,23 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: #FE0B0B;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
 .custom-nav {
   padding: 2em 0 2em 0;
 }

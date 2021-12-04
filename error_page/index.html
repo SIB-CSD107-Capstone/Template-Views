@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <button class="skip-link">Menuju ke konten</button>
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -57,11 +58,11 @@
   <!-- Container -->
   <div class="container">
     <!-- main-error -->
-    <main class="main-error">
-      <img src="img/error-page.jpg" alt="Error Page" class="img-fluid">
-      <h1>Oh no, something went wrong <span class="d-red">!</span></h1>
-      <div class="btn btn-primary back-btn rounded-pill" tabindex="0">Kembali ke Home <span class="iconify ml-2"
-          data-icon="fa-solid:angle-right"></span></div>
+    <main class="main-error" id="maincontent" tabindex="0">
+      <img src="img/error-page.jpg" alt="Error Page" class="img-fluid" tabindex="0">
+      <h1 tabindex="0">Oh no, something went wrong <span class="d-red">!</span></h1>
+      <button class="btn btn-danger back-btn rounded-pill" tabindex="0">Kembali ke Home <span class="iconify ml-2"
+          data-icon="fa-solid:angle-right"></span></button>
     </main>
   </div>
 
@@ -107,6 +108,7 @@
     </div>
   </footer>
 
+  <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
