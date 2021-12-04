@@ -357,4 +357,59 @@ main {
   background-color: #bb0707;
 }
 
+/* detail rawat inap */
+.detail-rawat-inap .btn-back {
+  display: block;
+}
+.detail-rawat-inap .telp-icon {
+  font-size: 1.4em;
+}
+.detail-rawat-inap .title-wrapper {
+  display: flex;
+}
+.detail-rawat-inap .title-wrapper .like-icon {
+  font-size: 2em;
+  margin-top: -5px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.detail-rawat-inap .service-detail .btn:focus {
+  box-shadow: none !important;
+}
+.detail-rawat-inap .service-detail .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail-rawat-inap .service-detail .card-header .up-arrow-icon {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.detail-rawat-inap .service-detail .card-body {
+  background-color: rgba(196, 196, 196, 0.4);
+  display: flex;
+  justify-content: space-around;
+}
+.detail-rawat-inap .service-detail .card-body .box {
+  padding-top: 0.4em;
+  padding: 0.4em 0.2em 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail-rawat-inap .service-detail .card-body .box p {
+  font-weight: 700;
+}
+.detail-rawat-inap .service-detail .card-body .box p:last-child {
+  font-size: 1.6em;
+}
+.detail-rawat-inap .service-detail .card-body .bed {
+  width: 140px;
+}
+
 /*# sourceMappingURL=main.css.map */
