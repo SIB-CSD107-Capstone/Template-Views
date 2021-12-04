@@ -2,13 +2,50 @@
 @use './responsive';
 @use './navbar';
 @use './footer';
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@use './typography'as typo;
+@use './utils';
+@use './mixins';
 
 body {
   font-family: "Poppins", arial, sans-serif;
   color: colors.$primary-color;
+}
+
+//! Styles
+html {
+  @include mixins.box-border();
+  scroll-behavior: smooth;
+}
+
+* {
+  @include mixins.box-inherit();
+
+  &:before {
+    @include mixins.box-inherit();
+  }
+
+  &:after {
+    @include mixins.box-inherit();
+  }
+}
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: colors.$secondary-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: .75rem;
+
+  &:focus {
+    top: 10px;
+  }
 }
 
 .detail-rawat-inap {
@@ -67,7 +104,7 @@ body {
         justify-content: space-between;
 
         p {
-          font-weight: bold;
+          font-weight: map-get($map: typo.$font-weights, $key: 'bold');
         }
 
         p:last-child {
