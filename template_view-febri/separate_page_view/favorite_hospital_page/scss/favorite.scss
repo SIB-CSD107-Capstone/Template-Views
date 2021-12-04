@@ -1,0 +1,87 @@
+@use './colors';
+@use './responsive';
+@use './navbar';
+@use './footer';
+@use './typography'as typo;
+@use './utils';
+@use './mixins';
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: colors.$primary-color;
+}
+
+//! Styles
+html {
+  @include mixins.box-border();
+  scroll-behavior: smooth;
+}
+
+* {
+  @include mixins.box-inherit();
+
+  &:before {
+    @include mixins.box-inherit();
+  }
+
+  &:after {
+    @include mixins.box-inherit();
+  }
+}
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: colors.$secondary-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: .75rem;
+
+  &:focus {
+    top: 10px;
+  }
+}
+
+/* Favorite Hospital Style */
+.favorite-hospital {
+
+  .search-favorite-hospital {
+    box-shadow: 0 0 8px 0 rgba($color: #000000, $alpha: .6);
+
+
+    input {
+      outline: 0;
+    }
+
+    .search-icon {
+      width: 1.6em;
+      font-size: 1.6em;
+      padding-right: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .list-favorite-hospital {
+    margin-top: 5em;
+
+    .card {
+      cursor: pointer;
+
+      box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .6);
+
+      &:hover {
+        background-color: colors.$fourth-color;
+      }
+    }
+  }
+
+  .text-address {
+    font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
+  }
+}

@@ -1,0 +1,178 @@
+@use './colors';
+@use './responsive';
+@use './navbar';
+@use './footer';
+@use './typography'as typo;
+@use './utils';
+@use './mixins';
+
+
+//! Styles
+html {
+    @include mixins.box-border();
+    scroll-behavior: smooth;
+}
+
+* {
+    @include mixins.box-inherit();
+
+    &:before {
+        @include mixins.box-inherit();
+    }
+
+    &:after {
+        @include mixins.box-inherit();
+    }
+}
+
+body {
+    font-family: "Poppins", arial, sans-serif;
+    color: colors.$primary-color;
+}
+
+// Skip Link
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: colors.$secondary-color;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    min-width: 44px;
+    min-height: 44px;
+    font-weight: bold;
+    font-size: .75rem;
+
+    &:focus {
+        top: 10px;
+    }
+}
+
+
+main {
+    min-height: 460px;
+}
+
+/* search-bar */
+.search-bar {
+    padding-top: 120px;
+    height: 960px;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(243, 243, 243, 0.6)), url('../img/hero.jpg');
+    background-position: 0 0;
+    background-size: cover;
+
+    header {
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 60px;
+            font-weight: map-get($map: typo.$font-weights, $key: 'bold');
+        }
+    }
+}
+
+.search-form {
+    .form-group {
+        margin-bottom: 40px;
+
+        label {
+            font-size: 20px;
+            font-weight: map-get($map: typo.$font-weights, $key: 'semi-bold');
+        }
+
+        select {
+            height: 54px;
+            cursor: pointer;
+        }
+    }
+
+    .form-check {
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 6px;
+        cursor: pointer;
+
+        input {
+            margin: 0 10px 0 0;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+
+    .btn-search {
+        margin-top: 90px;
+        width: 410px;
+        max-width: 90vw;
+        font-size: 20px;
+        font-weight: map-get($map: typo.$font-weights, $key: 'semi-bold');
+        border-radius: 6px;
+    }
+}
+
+/* Statistics Section */
+.statistics {
+    min-height: 720px;
+
+    header {
+        margin-bottom: 90px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: map-get($map: typo.$font-weights, $key: 'bold');
+            color: colors.$primary-color;
+        }
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: map-get($map: typo.$font-weights, $key: 'semi-bold');
+    }
+
+    .card {
+
+        .card-title,
+        .card-text {
+            font-weight: map-get($map: typo.$font-weights, $key: 'semi-bold');
+            // font-size: 24px;
+        }
+    }
+
+    .confirmed {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(91, 91, 250);
+        }
+    }
+
+    .treated {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(0, 195, 255);
+        }
+    }
+
+    .healed {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(35, 182, 35);
+        }
+    }
+
+    .died {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(187, 7, 7);
+        }
+    }
+}
