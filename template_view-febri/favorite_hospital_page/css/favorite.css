@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-.header {
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+@media (max-width: 510px) {
+  .header {
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+  }
 }
-
 .custom-nav {
   padding: 2em 0 2em 0;
 }
@@ -159,6 +160,54 @@ body {
   color: #121E2A;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: #121E2A;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: #FE0B0B;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+.favorite-hospital .search-favorite-hospital {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+}
 .favorite-hospital .search-favorite-hospital input {
   outline: 0;
 }
@@ -170,6 +219,13 @@ body {
 }
 .favorite-hospital .list-favorite-hospital {
   margin-top: 5em;
+}
+.favorite-hospital .list-favorite-hospital .card {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+.favorite-hospital .list-favorite-hospital .card:hover {
+  background-color: #C4C4C4;
 }
 .favorite-hospital .text-address {
   font-weight: 600;

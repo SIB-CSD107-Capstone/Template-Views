@@ -10,6 +10,7 @@
 //! Styles
 html {
     @include mixins.box-border();
+    scroll-behavior: smooth;
 }
 
 * {
@@ -22,10 +23,6 @@ html {
     &:after {
         @include mixins.box-inherit();
     }
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -58,7 +55,6 @@ main {
 }
 
 /* search-bar */
-
 .search-bar {
     padding-top: 120px;
     height: 960px;
@@ -74,8 +70,6 @@ main {
             font-weight: map-get($map: typo.$font-weights, $key: 'bold');
         }
     }
-
-
 }
 
 .search-form {
@@ -88,7 +82,6 @@ main {
         }
 
         select {
-            // display: block;
             height: 54px;
             cursor: pointer;
         }
@@ -96,7 +89,6 @@ main {
 
     .form-check {
         width: 100%;
-        // background-color: colors.$secondary-color;
         padding: 10px;
         padding-left: 20px;
         display: flex !important;
@@ -107,8 +99,6 @@ main {
 
         input {
             margin: 0 10px 0 0;
-            // padding: 0;
-            // background-color: green;
         }
 
         label {
@@ -120,18 +110,13 @@ main {
         margin-top: 90px;
         width: 410px;
         max-width: 90vw;
-        // background-color: colors.$secondary-color;
         font-size: 20px;
         font-weight: map-get($map: typo.$font-weights, $key: 'semi-bold');
         border-radius: 6px;
-
     }
-
-
 }
 
 /* Statistics Section */
-
 .statistics {
     min-height: 720px;
 

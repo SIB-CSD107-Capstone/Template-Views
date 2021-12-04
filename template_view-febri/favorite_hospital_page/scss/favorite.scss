@@ -4,6 +4,7 @@
 @use './footer';
 @use './typography'as typo;
 @use './utils';
+@use './mixins';
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
@@ -16,9 +17,55 @@ body {
   color: colors.$primary-color;
 }
 
+//! Styles
+html {
+  @include mixins.box-border();
+  scroll-behavior: smooth;
+}
+
+* {
+  @include mixins.box-inherit();
+
+  &:before {
+    @include mixins.box-inherit();
+  }
+
+  &:after {
+    @include mixins.box-inherit();
+  }
+}
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: colors.$primary-color;
+}
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: colors.$secondary-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: .75rem;
+
+  &:focus {
+    top: 10px;
+  }
+}
+
 
 .favorite-hospital {
+
   .search-favorite-hospital {
+    box-shadow: 0 0 8px 0 rgba($color: #000000, $alpha: .6);
+
+
     input {
       outline: 0;
     }
@@ -33,6 +80,16 @@ body {
 
   .list-favorite-hospital {
     margin-top: 5em;
+
+    .card {
+      cursor: pointer;
+
+      box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .6);
+
+      &:hover {
+        background-color: colors.$fourth-color;
+      }
+    }
   }
 
   .text-address {
