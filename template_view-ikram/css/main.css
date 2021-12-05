@@ -1,10 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-.header {
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+@media screen and (min-width: 465px) {
+  .modal-custom .mv-edukasi {
+    width: 24em !important;
+  }
 }
+@media screen and (min-width: 768px) {
+  .header {
+    box-shadow: none !important;
+  }
+  .header .custom-nav {
+    padding: 2em 0 0 0 !important;
+  }
 
+  .about-covid {
+    margin-top: 4em !important;
+  }
+  .about-covid .text-about p:first-child {
+    font-size: 1rem !important;
+  }
+  .about-covid .text-about .heading-1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .about-covid .text-about p:last-child {
+    font-size: 1rem !important;
+  }
+
+  .blog-post,
+.video-post {
+    margin-top: 4em !important;
+  }
+  .blog-post p:first-child,
+.video-post p:first-child {
+    font-size: 1rem !important;
+  }
+  .blog-post .heading-2,
+.video-post .heading-2 {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .custom-blog-post .heading-3 {
+    font-size: 1.5rem !important;
+  }
+  .custom-blog-post p {
+    font-size: 1rem !important;
+  }
+
+  .custom-video-post .card-body .heading-3 {
+    font-size: 1.5rem !important;
+  }
+
+  .search-hospital {
+    margin-top: 4em !important;
+    padding: 2.5em 12em !important;
+  }
+  .search-hospital .heading-1 {
+    font-size: 2.5rem !important;
+  }
+
+  .modal-custom .mv-edukasi {
+    width: 29em !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrap-about {
+    flex-direction: row !important;
+  }
+
+  .about-covid .text-about {
+    margin-top: 0 !important;
+  }
+  .about-covid .text-about #heading-1 {
+    font-size: 1.5rem !important;
+  }
+
+  .blog-post .heading-2,
+.video-post .heading-2 {
+    font-size: 1.5rem !important;
+  }
+
+  .custom-blog-post .heading-3 {
+    font-size: 1.25rem !important;
+  }
+
+  .custom-video-post .card-body .heading-3 {
+    font-size: 1.25rem !important;
+  }
+
+  .search-hospital .heading-1 {
+    font-size: 2rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-covid {
+    margin-top: 4.5em !important;
+  }
+  .about-covid .text-about .heading-1 {
+    font-size: 2.3rem !important;
+  }
+
+  .blog-post,
+.video-post {
+    margin-top: 4.5em !important;
+  }
+  .blog-post .heading-2,
+.video-post .heading-2 {
+    font-size: 2rem !important;
+  }
+
+  .search-hospital {
+    margin-top: 4.5em !important;
+  }
+  .search-hospital .heading-1 {
+    font-size: 2.5rem !important;
+  }
+}
 .custom-nav {
-  padding: 2em 0 2em 0;
+  padding: 1em 0 1em 0;
 }
 .custom-nav .navbar-brand img {
   width: 10.375rem;
@@ -55,11 +168,6 @@
 }
 .custom-nav .navbar-toggler {
   padding: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  .custom-nav {
-    padding: 2em 0 0 0;
-  }
 }
 
 footer .footer-up {
@@ -146,9 +254,202 @@ footer .footer-bottom .content-foo-bottom .github {
   }
 }
 
+.bg-red {
+  background-color: #FE0B0B;
+}
+
 body {
   font-family: "Poppins", arial, sans-serif;
   color: #121E2A;
+}
+
+.header {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.about-covid {
+  margin-top: 2.5em;
+}
+.about-covid .wrap-about {
+  flex-direction: column-reverse;
+}
+.about-covid img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.about-covid .text-about {
+  margin-top: 1.5em;
+}
+.about-covid .text-about p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+.about-covid .text-about .heading-1 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-covid .text-about .heading-1 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+.about-covid .text-about p:last-child {
+  color: #6C757D;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.blog-post,
+.video-post {
+  margin-top: 3em;
+}
+.blog-post p:first-child,
+.video-post p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+.blog-post .heading-2,
+.video-post .heading-2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.blog-post .heading-2 .d-red,
+.video-post .heading-2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+
+.custom-blog-post img {
+  height: 18.375em;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 1em;
+}
+.custom-blog-post .heading-3 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+.custom-blog-post .heading-3 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+.custom-blog-post p {
+  color: #6C757D;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.custom-blog-post .read-btn {
+  padding: 0.7em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+
+.custom-video-post {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+  stroke: 1px solid #C4C4C4;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+.custom-video-post img {
+  height: 10em;
+  object-fit: cover;
+  border-radius: 1.25rem 1.25rem 0 0;
+  -webkit-border-radius: 1.25rem 1.25rem 0 0;
+  -moz-border-radius: 1.25rem 1.25rem 0 0;
+  -ms-border-radius: 1.25rem 1.25rem 0 0;
+  -o-border-radius: 1.25rem 1.25rem 0 0;
+}
+.custom-video-post .card-body .heading-3 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.custom-video-post .card-body .heading-3 a {
+  text-decoration: none;
+  color: #121E2A;
+  transition: 0.3s color ease;
+  -webkit-transition: 0.3s color ease;
+  -moz-transition: 0.3s color ease;
+  -ms-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
+}
+.custom-video-post .card-body .heading-3 a:hover {
+  color: #FE0B0B;
+  transition: 0.3s color ease;
+  -webkit-transition: 0.3s color ease;
+  -moz-transition: 0.3s color ease;
+  -ms-transition: 0.3s color ease;
+  -o-transition: 0.3s color ease;
+}
+
+.search-hospital {
+  margin-top: 3em;
+  margin-bottom: 4.5em;
+  padding: 2em;
+  background-color: #121E2A;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.search-hospital .heading-1 {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-bottom: 0.5rem !important;
+}
+.search-hospital p {
+  margin-bottom: 2em;
+}
+.search-hospital .to-search-btn {
+  padding: 1em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+
+.modal-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-custom .mv-edukasi {
+  height: 19.688em;
+  width: 16.8em;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

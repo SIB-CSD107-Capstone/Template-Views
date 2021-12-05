@@ -1,0 +1,155 @@
+@media screen and (min-width: 465px) {
+  .modal-custom {
+    .mv-edukasi {
+      width: 24em !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    box-shadow: none !important;
+
+    .custom-nav {
+      padding: 2em 0 0 0 !important;
+    }
+  }
+
+  .about-covid {
+    margin-top: 4em !important;
+
+    .text-about {
+      p:first-child {
+        font-size: 1rem !important;
+      }
+
+      .heading-1 {
+        font-size: 2.4rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      p:last-child {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .blog-post,
+  .video-post {
+    margin-top: 4em !important;
+
+    p:first-child {
+      font-size: 1rem !important;
+    }
+
+    .heading-2 {
+      font-size: 2rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  .custom-blog-post {
+    .heading-3 {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .custom-video-post {
+    .card-body {
+      .heading-3 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  .search-hospital {
+    margin-top: 4em !important;
+    padding: 2.5em 12em !important;
+
+    .heading-1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .modal-custom {
+    .mv-edukasi {
+      width: 29em !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrap-about {
+    flex-direction: row !important;
+  }
+
+  .about-covid {
+    .text-about {
+      margin-top: 0 !important;
+
+      #heading-1 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  .blog-post,
+  .video-post {
+    .heading-2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .custom-blog-post {
+    .heading-3 {
+      font-size: 1.25rem !important;
+    }
+  }
+
+  .custom-video-post {
+    .card-body {
+      .heading-3 {
+        font-size: 1.25rem !important;
+      }
+    }
+  }
+
+  .search-hospital {
+    .heading-1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-covid {
+    margin-top: 4.5em !important;
+
+    .text-about {
+      .heading-1 {
+        font-size: 2.3rem !important;
+      }
+    }
+  }
+
+  .blog-post,
+  .video-post {
+    margin-top: 4.5em !important;
+
+    .heading-2 {
+      font-size: 2rem !important;
+    }
+  }
+
+  .search-hospital {
+    margin-top: 4.5em !important;
+
+    .heading-1 {
+      font-size: 2.5rem !important;
+    }
+  }
+}

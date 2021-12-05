@@ -4,11 +4,191 @@
 @use './footer';
 @use './typography'as typo;
 @use './utils';
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@use './mixins';
 
-
-
+//! Styles
 body {
   font-family: "Poppins", arial, sans-serif;
   color: colors.$primary-color;
+}
+
+// Navbar 
+.header {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+// Main Media Page
+.about-covid {
+  @include mixins.margin-section($mtSize: 2.5em);
+
+  .wrap-about {
+    flex-direction: column-reverse;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .text-about {
+    margin-top: 1.5em;
+
+    p:first-child {
+      @include mixins.sub-heading($fontSize: 0.75rem);
+    }
+
+    .heading-1 {
+      @include mixins.heading1(colors.$primary-color);
+
+      .d-red {
+        color: colors.$secondary-color;
+        margin-left: -0.2em;
+      }
+    }
+
+    p:last-child {
+      @include mixins.text-content($fontSize: .75rem);
+    }
+  }
+}
+
+// Main Blog Media Page
+.blog-post,
+.video-post {
+  @include mixins.margin-section();
+
+  p:first-child {
+    @include mixins.sub-heading($fontSize: 0.75rem);
+  }
+
+  .heading-2 {
+    @include mixins.heading2();
+
+    .d-red {
+      color: colors.$secondary-color;
+      margin-left: -0.2em;
+    }
+  }
+}
+
+// Main Card Media Page
+.custom-blog-post {
+  img {
+    height: 18.375em;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 1em;
+  }
+
+  .heading-3 {
+    @include mixins.heading3($lineHeight: 2rem);
+
+    .d-red {
+      color: colors.$secondary-color;
+      margin-left: -0.2em;
+    }
+  }
+
+  p {
+    @include mixins.text-content($fontSize: .75rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .read-btn {
+    @include mixins.solid-btn($paddingSize: 0.7em);
+  }
+}
+
+.custom-video-post {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+  stroke: 1px solid colors.$fourth-color;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+
+  img {
+    height: 10em;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+    -webkit-border-radius: 1.25rem 1.25rem 0 0;
+    -moz-border-radius: 1.25rem 1.25rem 0 0;
+    -ms-border-radius: 1.25rem 1.25rem 0 0;
+    -o-border-radius: 1.25rem 1.25rem 0 0;
+  }
+
+  .card-body {
+    .heading-3 {
+      @include mixins.heading3($lineHeight: 2rem);
+      text-align: center;
+      margin-bottom: 0;
+
+      a {
+        text-decoration: none;
+        color: colors.$primary-color;
+        transition: .3s color ease;
+        -webkit-transition: .3s color ease;
+        -moz-transition: .3s color ease;
+        -ms-transition: .3s color ease;
+        -o-transition: .3s color ease;
+
+        &:hover {
+          color: colors.$secondary-color;
+          transition: .3s color ease;
+          -webkit-transition: .3s color ease;
+          -moz-transition: .3s color ease;
+          -ms-transition: .3s color ease;
+          -o-transition: .3s color ease;
+        }
+      }
+    }
+  }
+}
+
+.search-hospital {
+  @include mixins.margin-section();
+  margin-bottom: 4.5em;
+  padding: 2em;
+  background-color: colors.$primary-color;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  .heading-1 {
+    @include mixins.heading1($color: #fff !important);
+    margin-bottom: .5rem !important;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  .to-search-btn {
+    @include mixins.solid-btn($paddingSize: 1em)
+  }
+}
+
+.modal-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mv-edukasi {
+    height: 19.688em;
+    width: 16.8em;
+    margin: 0 auto;
+  }
 }
