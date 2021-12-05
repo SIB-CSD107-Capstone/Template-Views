@@ -192,3 +192,18 @@ body {
     margin: 0 auto;
   }
 }
+
+// main-error
+.main-error {
+  @include mixins.margin-section($mtSize: 5em);
+  text-align: center;
+  margin-bottom: 4.5em;
+
+  .heading-1 {
+    @include mixins.heading1();
+  }
+
+  .back-btn {
+    @include mixins.solid-btn($paddingSize: .5em);
+  }
+}

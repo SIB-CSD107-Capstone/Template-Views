@@ -80,6 +80,19 @@
       width: 29em !important;
     }
   }
+
+  .main-error {
+    margin-top: 2em !important;
+
+    .heading-1 {
+      font-size: 2.5rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .back-btn {
+      padding: 1em !important;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -123,6 +136,12 @@
       font-size: 2rem !important;
     }
   }
+
+  .main-error {
+    .heading-1 {
+      font-size: 2rem !important;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -147,6 +166,14 @@
 
   .search-hospital {
     margin-top: 4.5em !important;
+
+    .heading-1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .main-error {
+    margin-top: 2.5em !important;
 
     .heading-1 {
       font-size: 2.5rem !important;
