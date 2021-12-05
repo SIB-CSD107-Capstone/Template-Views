@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@media screen and (min-width: 465px) {
+@media screen and (min-width: 425px) {
   .modal-custom .mv-edukasi {
     width: 24em !important;
+  }
+
+  .blog-detail img {
+    height: 19em !important;
+  }
+  .blog-detail .blog-text {
+    font-size: 1rem !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -63,6 +70,37 @@
     width: 29em !important;
   }
 
+  .blog-detail {
+    margin-top: 4em !important;
+  }
+  .blog-detail .sub-detail {
+    font-size: 1rem !important;
+  }
+  .blog-detail .heading-1 {
+    font-size: 2rem !important;
+  }
+  .blog-detail .date-detail {
+    margin-bottom: 2rem !important;
+  }
+  .blog-detail img {
+    height: 20rem !important;
+  }
+  .blog-detail .blog-text {
+    font-size: 1.25rem !important;
+  }
+  .blog-detail .komentar {
+    margin-top: 4em !important;
+  }
+  .blog-detail .komentar .heading-2 {
+    font-size: 2rem !important;
+  }
+  .blog-detail .komentar-terbaru {
+    margin-top: 4em !important;
+  }
+  .blog-detail .komentar-terbaru .heading-2 {
+    font-size: 2rem !important;
+  }
+
   .main-error {
     margin-top: 2em !important;
   }
@@ -103,8 +141,25 @@
     font-size: 2rem !important;
   }
 
+  .blog-detail img {
+    margin-bottom: 2rem !important;
+    height: 25.625rem !important;
+  }
+  .blog-detail .komentar .heading-2 {
+    font-size: 1.5rem !important;
+  }
+
+  .komentar-terbaru .heading-2 {
+    font-size: 1.5rem !important;
+  }
+
   .main-error .heading-1 {
     font-size: 2rem !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blog-detail .blog-text {
+    font-size: 1.1rem !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -124,11 +179,31 @@
     font-size: 2rem !important;
   }
 
+  .blog-detail .heading-1 {
+    font-size: 2.5rem !important;
+  }
+
   .search-hospital {
     margin-top: 4.5em !important;
   }
   .search-hospital .heading-1 {
     font-size: 2.5rem !important;
+  }
+
+  .blog-detail {
+    margin-top: 4.5em !important;
+  }
+  .blog-detail .komentar {
+    margin-top: 4.5em !important;
+  }
+  .blog-detail .komentar .heading-2 {
+    font-size: 2rem !important;
+  }
+  .blog-detail .komentar-terbaru {
+    margin-top: 4.5em !important;
+  }
+  .blog-detail .komentar-terbaru .heading-2 {
+    font-size: 2rem !important;
   }
 
   .main-error {
@@ -472,6 +547,109 @@ body {
   height: 19.688em;
   width: 16.8em;
   margin: 0 auto;
+}
+
+.blog-detail {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+.blog-detail .sub-detail {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+.blog-detail .heading-1 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+.blog-detail .date-detail {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6C757D;
+  margin-bottom: 1.5rem;
+}
+.blog-detail img {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+.blog-detail .blog-text {
+  color: #6C757D;
+  font-size: 0.9rem;
+}
+.blog-detail .komentar {
+  margin-top: 3em;
+}
+.blog-detail .komentar .heading-2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.blog-detail .komentar .heading-2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+.blog-detail .komentar .custom-komen {
+  padding: 1em;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+.blog-detail .komentar .btn-komen {
+  padding: 0.5em;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+  width: 5em;
+}
+.blog-detail .komentar-terbaru {
+  margin-top: 3em;
+}
+.blog-detail .komentar-terbaru .heading-2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.blog-detail .komentar-terbaru .heading-2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+.blog-detail .card-komen {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+  padding: 1.25em;
+}
+.blog-detail .card-komen .heading-3 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.blog-detail .card-komen .date-komen {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+.blog-detail .card-komen p {
+  color: #6C757D;
+  margin-top: 1em;
 }
 
 .main-error {

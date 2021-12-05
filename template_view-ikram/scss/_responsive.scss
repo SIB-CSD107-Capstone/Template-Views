@@ -1,7 +1,17 @@
-@media screen and (min-width: 465px) {
+@media screen and (min-width: 425px) {
   .modal-custom {
     .mv-edukasi {
       width: 24em !important;
+    }
+  }
+
+  .blog-detail {
+    img {
+      height: 19em !important;
+    }
+
+    .blog-text {
+      font-size: 1rem !important;
     }
   }
 }
@@ -81,6 +91,46 @@
     }
   }
 
+  .blog-detail {
+    margin-top: 4em !important;
+
+    .sub-detail {
+      font-size: 1rem !important;
+    }
+
+    .heading-1 {
+      font-size: 2rem !important;
+    }
+
+    .date-detail {
+      margin-bottom: 2rem !important;
+    }
+
+    img {
+      height: 20rem !important;
+    }
+
+    .blog-text {
+      font-size: 1.25rem !important;
+    }
+
+    .komentar {
+      margin-top: 4em !important;
+
+      .heading-2 {
+        font-size: 2rem !important;
+      }
+    }
+
+    .komentar-terbaru {
+      margin-top: 4em !important;
+
+      .heading-2 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
   .main-error {
     margin-top: 2em !important;
 
@@ -137,9 +187,36 @@
     }
   }
 
+  .blog-detail {
+    img {
+      margin-bottom: 2rem !important;
+      height: 25.625rem !important;
+    }
+
+    .komentar {
+      .heading-2 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  .komentar-terbaru {
+    .heading-2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
   .main-error {
     .heading-1 {
       font-size: 2rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-detail {
+    .blog-text {
+      font-size: 1.1rem !important;
     }
   }
 }
@@ -164,11 +241,37 @@
     }
   }
 
+  .blog-detail {
+    .heading-1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
   .search-hospital {
     margin-top: 4.5em !important;
 
     .heading-1 {
       font-size: 2.5rem !important;
+    }
+  }
+
+  .blog-detail {
+    margin-top: 4.5em !important;
+
+    .komentar {
+      margin-top: 4.5em !important;
+
+      .heading-2 {
+        font-size: 2rem !important;
+      }
+    }
+
+    .komentar-terbaru {
+      margin-top: 4.5em !important;
+
+      .heading-2 {
+        font-size: 2rem !important;
+      }
     }
   }
 
