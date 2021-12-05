@@ -15,21 +15,12 @@ footer {
       font-size: 0.75rem;
       margin-bottom: 1.5rem;
       color: colors.$third-color;
-
-      @media screen and (min-width: 768px) {
-        font-size: 1rem;
-        margin-bottom: 0;
-      }
     }
 
     h4 {
       color: colors.$primary-color;
       font-weight: bold;
       font-size: 1.25rem;
-
-      @media screen and (min-width: 768px) {
-        font-size: 1.5rem;
-      }
     }
 
     ul {
@@ -47,17 +38,8 @@ footer {
           &:hover {
             color: darken($color: colors.$third-color, $amount: 30%);
           }
-
-          @media screen and (min-width: 768px) {
-            font-size: 1rem;
-          }
         }
       }
-    }
-
-    @media screen and (min-width: 768px) {
-      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
-      text-align: left;
     }
   }
 
@@ -74,18 +56,10 @@ footer {
         margin-bottom: 0;
         font-size: .75rem;
         font-weight: bold;
-
-        @media screen and (min-width: 768px) {
-          font-size: 1rem;
-        }
       }
 
       .github {
         margin-bottom: .5rem;
-
-        @media screen and (min-width: 768px) {
-          margin-bottom: 0;
-        }
       }
     }
   }

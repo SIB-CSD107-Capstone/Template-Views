@@ -191,8 +191,33 @@
   .main-error .back-btn {
     padding: 1em !important;
   }
+
+  footer .footer-up {
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem !important;
+    text-align: left !important;
+  }
+  footer .footer-up p {
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+  footer .footer-up h4 {
+    font-size: 1.5rem !important;
+  }
+  footer .footer-up ul li a {
+    font-size: 1rem !important;
+  }
+  footer .footer-bottom p {
+    font-size: 1rem !important;
+  }
+  footer .footer-bottom .github {
+    margin-bottom: 0 !important;
+  }
 }
 @media screen and (min-width: 992px) {
+  #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-right: 1em !important;
+  }
+
   .wrap-about {
     flex-direction: row !important;
   }
@@ -396,11 +421,6 @@
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
   color: #FE0B0B;
 }
-@media screen and (min-width: 992px) {
-  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
-    margin-right: 1em;
-  }
-}
 .custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn {
   border: 2px solid #FE0B0B;
   background-color: transparent;
@@ -439,21 +459,10 @@ footer .footer-up p {
   margin-bottom: 1.5rem;
   color: #6C757D;
 }
-@media screen and (min-width: 768px) {
-  footer .footer-up p {
-    font-size: 1rem;
-    margin-bottom: 0;
-  }
-}
 footer .footer-up h4 {
   color: #121E2A;
   font-weight: bold;
   font-size: 1.25rem;
-}
-@media screen and (min-width: 768px) {
-  footer .footer-up h4 {
-    font-size: 1.5rem;
-  }
 }
 footer .footer-up ul {
   padding: 0;
@@ -470,17 +479,6 @@ footer .footer-up ul li a {
 footer .footer-up ul li a:hover {
   color: #25282b;
 }
-@media screen and (min-width: 768px) {
-  footer .footer-up ul li a {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  footer .footer-up {
-    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
-    text-align: left;
-  }
-}
 footer .footer-bottom {
   background-color: #121E2A;
   color: white;
@@ -495,18 +493,8 @@ footer .footer-bottom .content-foo-bottom p {
   font-size: 0.75rem;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) {
-  footer .footer-bottom .content-foo-bottom p {
-    font-size: 1rem;
-  }
-}
 footer .footer-bottom .content-foo-bottom .github {
   margin-bottom: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  footer .footer-bottom .content-foo-bottom .github {
-    margin-bottom: 0;
-  }
 }
 
 .bg-red {

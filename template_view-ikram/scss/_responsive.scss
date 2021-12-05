@@ -248,9 +248,53 @@
       padding: 1em !important;
     }
   }
+
+  footer {
+    .footer-up {
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem !important;
+      text-align: left !important;
+
+      p {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+      }
+
+      h4 {
+        font-size: 1.5rem !important;
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 1rem !important;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      p {
+        font-size: 1rem !important;
+      }
+
+      .github {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          margin-right: 1em !important;
+        }
+      }
+    }
+  }
+
   .wrap-about {
     flex-direction: row !important;
   }
