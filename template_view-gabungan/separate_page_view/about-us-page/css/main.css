@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: #FE0B0B;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+.custom-nav {
+  padding: 2em 0 2em 0;
+}
+.custom-nav .navbar-brand img {
+  width: 10.375rem;
+  height: 2.5em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  color: #121E2A;
+  padding: 1em;
+  text-align: center;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link.active {
+  font-weight: 600;
+  color: #FE0B0B;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FE0B0B;
+}
+@media screen and (min-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-right: 1em;
+  }
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn {
+  border: 2px solid #FE0B0B;
+  background-color: transparent;
+  height: 3em;
+  width: 8em;
+  margin: 0 auto;
+  color: #FE0B0B;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn .icon-phone {
+  margin-right: 0.75em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .hotline-btn:hover {
+  background-color: #FE0B0B;
+  color: white;
+}
+.custom-nav .navbar-toggler {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .custom-nav {
+    padding: 2em 0 0 0;
+  }
+}
+
+.about-web {
+  margin-top: 1em;
+}
+@media screen and (min-width: 768px) {
+  .about-web {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-web {
+    margin-top: 4.5em;
+  }
+}
+.about-web .wrap-about {
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .about-web .wrap-about {
+    flex-direction: row;
+  }
+}
+.about-web img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.about-web .text-about {
+  margin-top: 1.5em;
+}
+.about-web .text-about p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .about-web .text-about p:first-child {
+    font-size: 1rem;
+  }
+}
+.about-web .text-about h1 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-web .text-about h1 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .about-web .text-about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-web .text-about h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-web .text-about h1 {
+    font-size: 2.3rem;
+  }
+}
+.about-web .text-about p:last-child {
+  color: #6C757D;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .about-web .text-about p:last-child {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-web .text-about {
+    margin-top: 0;
+  }
+}
+
+.fitur-web {
+  margin-top: 3em;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fitur-web {
+    margin-top: 4.5em;
+  }
+}
+.fitur-web p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web p:first-child {
+    font-size: 1rem;
+  }
+}
+.fitur-web h2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.fitur-web h2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fitur-web h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fitur-web h2 {
+    font-size: 2.3rem;
+  }
+}
+.fitur-web .fitur-card {
+  margin-top: 3em;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web .fitur-card {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fitur-web .fitur-card {
+    margin-top: 4.5em;
+  }
+}
+.fitur-web .fitur-card .logo-fitur {
+  background-color: #FE0B0B;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web .fitur-card .logo-fitur {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.fitur-web .fitur-card .body-fitur {
+  padding-top: 2rem;
+}
+.fitur-web .fitur-card .body-fitur h3 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+.fitur-web .fitur-card .body-fitur h3 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .fitur-web .fitur-card .body-fitur h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fitur-web .fitur-card .body-fitur h3 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fitur-web .fitur-card .body-fitur h3 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fitur-web .fitur-card {
+    margin-bottom: 0;
+  }
+}
+
+.team-pengembang {
+  margin-top: 3em;
+}
+@media screen and (min-width: 768px) {
+  .team-pengembang {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-pengembang {
+    margin-top: 4.5em;
+  }
+}
+.team-pengembang p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .team-pengembang p:first-child {
+    font-size: 1rem;
+  }
+}
+.team-pengembang h2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.team-pengembang h2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .team-pengembang h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .team-pengembang h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-pengembang h2 {
+    font-size: 2.3rem;
+  }
+}
+.team-pengembang .team-card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+}
+.team-pengembang .team-card img {
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  height: 12rem;
+}
+@media screen and (min-width: 1024px) {
+  .team-pengembang .team-card img {
+    height: 15rem;
+  }
+}
+.team-pengembang .team-card .team-name {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.team-pengembang .team-card .team-name .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+@media screen and (min-width: 768px) {
+  .team-pengembang .team-card .team-name {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .team-pengembang .team-card .team-name {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-pengembang .team-card .team-name {
+    font-size: 1.25rem;
+  }
+}
+.team-pengembang .team-card .team-id {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .team-pengembang .team-card .team-id {
+    font-size: 1rem;
+  }
+}
+
+footer .footer-up {
+  background-color: rgba(196, 196, 196, 0.3);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer .footer-up img {
+  height: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .footer-up p {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #6C757D;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+footer .footer-up h4 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up h4 {
+    font-size: 1.5rem;
+  }
+}
+footer .footer-up ul {
+  padding: 0;
+}
+footer .footer-up ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+footer .footer-up ul li a {
+  text-decoration: none;
+  color: #6C757D;
+  font-size: 0.75rem;
+}
+footer .footer-up ul li a:hover {
+  color: #25282b;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up ul li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer-up {
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    text-align: left;
+  }
+}
+footer .footer-bottom {
+  background-color: #121E2A;
+  color: white;
+  height: 6rem;
+  padding: 1rem;
+}
+footer .footer-bottom .content-foo-bottom {
+  padding: 0;
+}
+footer .footer-bottom .content-foo-bottom p {
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-bottom .content-foo-bottom p {
+    font-size: 1rem;
+  }
+}
+footer .footer-bottom .content-foo-bottom .github {
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-bottom .content-foo-bottom .github {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
