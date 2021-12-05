@@ -1,0 +1,292 @@
+//! Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//! Variables
+$primary-color: #121E2A;
+$secondary-color: #FE0B0B;
+$third-color: #6C757D;
+$fourth-color: #C4C4C4;
+
+//! Mixins
+@mixin box-border {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin box-inherit {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@mixin margin-section($mtSize: 3em) {
+  margin-top: $mtSize;
+}
+
+@mixin heading($fontSize, $mBottom, $color: $primary-color) {
+  color: $color;
+  font-weight: bold;
+  font-size: $fontSize;
+  margin-bottom: $mBottom;
+
+  .d-red {
+    color: $secondary-color;
+    margin-left: -0.2em;
+  }
+}
+
+@mixin solid-btn($paddingSize) {
+  padding: $paddingSize;
+  min-height: 44px;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-weight: bold;
+}
+
+//! Styles
+html {
+  @include box-border();
+}
+
+* {
+  @include box-inherit();
+
+  &:before {
+    @include box-inherit();
+  }
+
+  &:after {
+    @include box-inherit();
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: $secondary-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: .75rem;
+
+  &:focus {
+    top: 10px;
+  }
+}
+
+// Navigation | Navbar
+.custom-nav {
+  padding: 2em 0 2em 0;
+
+  .navbar-brand {
+    img {
+      width: 10.375rem;
+      height: 2.5em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: 400;
+          color: $primary-color;
+          padding: 1em;
+          text-align: center;
+          transition: 0.2s ease;
+          -webkit-transition: 0.2s ease;
+          -moz-transition: 0.2s ease;
+          -ms-transition: 0.2s ease;
+          -o-transition: 0.2s ease;
+
+          &.active {
+            font-weight: 600;
+            color: $secondary-color;
+          }
+
+          &:hover {
+            color: $secondary-color;
+          }
+
+          @media screen and (min-width: 992px) {
+            margin-right: 1em;
+          }
+        }
+
+        .hotline-btn {
+          border: 2px solid $secondary-color;
+          background-color: transparent;
+          height: 3em;
+          width: 8em;
+          margin: 0 auto;
+          color: $secondary-color;
+          transition: 0.5s ease;
+          -webkit-transition: 0.5s ease;
+          -moz-transition: 0.5s ease;
+          -ms-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+
+          .icon-phone {
+            margin-right: 0.75em;
+          }
+
+          &:hover {
+            background-color: $secondary-color;
+            color: white;
+          }
+        }
+      }
+
+    }
+  }
+
+  .navbar-toggler {
+    padding: .5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 2em 0 0 0;
+  }
+}
+
+// main-error
+.main-error {
+  @include margin-section($mtSize: 3em);
+  text-align: center;
+  margin-bottom: 4.5em;
+
+  h1 {
+    @include heading($fontSize: 1.5rem, $mBottom: 1rem);
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .back-btn {
+    @include solid-btn($paddingSize: .5em);
+
+    @media screen and (min-width: 768px) {
+      padding: 1em;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 2em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 2.5em;
+  }
+}
+
+// Footer Section
+footer {
+  .footer-up {
+    background-color: fade-out($color: $fourth-color, $amount: 0.7);
+    padding: 2.5rem 0;
+    text-align: center;
+
+    img {
+      height: 3.5rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: $third-color;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 1.25rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: .5rem;
+
+        a {
+          text-decoration: none;
+          color: $third-color;
+          font-size: .75rem;
+
+          &:hover {
+            color: darken($color: $third-color, $amount: 30%);
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+      text-align: left;
+    }
+  }
+
+  .footer-bottom {
+    background-color: $primary-color;
+    color: white;
+    height: 6rem;
+    padding: 1rem;
+
+    .content-foo-bottom {
+      padding: 0;
+
+      p {
+        margin-bottom: 0;
+        font-size: .75rem;
+        font-weight: bold;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      .github {
+        margin-bottom: .5rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
