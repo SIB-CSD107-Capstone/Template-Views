@@ -131,6 +131,77 @@
     }
   }
 
+  .about-web {
+    margin-top: 4em !important;
+
+    .text-about {
+      margin-top: 0 !important;
+
+      p:first-child {
+        font-size: 1rem !important;
+      }
+
+      .heading-1 {
+        font-size: 2.5rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      p:last-child {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .fitur-web {
+    margin-top: 4em !important;
+
+    p:first-child {
+      font-size: 1rem !important;
+    }
+
+    .heading-2 {
+      font-size: 2rem !important;
+    }
+
+    .fitur-card {
+      margin-bottom: 0 !important;
+      margin-top: 4em !important;
+
+      .logo-fitur {
+        width: 6.25rem !important;
+        height: 6.25rem !important;
+      }
+
+      .body-fitur {
+        .heading-3 {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  .team-pengembang {
+    margin-top: 4em !important;
+
+    p:first-child {
+      font-size: 1rem !important;
+    }
+
+    .heading-2 {
+      font-size: 2rem !important;
+    }
+
+    .team-card {
+      .team-name {
+        font-size: 1.5rem !important;
+      }
+
+      .team-id {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
   .main-error {
     margin-top: 2em !important;
 
@@ -206,6 +277,44 @@
     }
   }
 
+  .about-web {
+    .wrap-about {
+      flex-direction: row !important;
+    }
+
+    .text-about {
+      .heading-1 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  .fitur-web {
+    .heading-2 {
+      font-size: 1.5rem !important;
+    }
+
+    .fitur-card {
+      .body-fitur {
+        .heading-3 {
+          font-size: 1.25rem !important;
+        }
+      }
+    }
+  }
+
+  .team-pengembang {
+    .heading-2 {
+      font-size: 1.5rem !important;
+    }
+
+    .team-card {
+      .team-name {
+        font-size: 1.25rem !important;
+      }
+    }
+  }
+
   .main-error {
     .heading-1 {
       font-size: 2rem !important;
@@ -217,6 +326,12 @@
   .blog-detail {
     .blog-text {
       font-size: 1.1rem !important;
+    }
+  }
+
+  .team-pengembang {
+    img {
+      height: 15rem !important;
     }
   }
 }
@@ -272,6 +387,36 @@
       .heading-2 {
         font-size: 2rem !important;
       }
+    }
+  }
+
+  .about-web {
+    margin-top: 4.5em !important;
+
+    .text-about {
+      .heading-1 {
+        font-size: 2.3rem !important;
+      }
+    }
+  }
+
+  .fitur-web {
+    margin-top: 4.5em !important;
+
+    .heading-2 {
+      font-size: 2.3rem !important;
+    }
+
+    .fitur-card {
+      margin-top: 4.5em !important;
+    }
+  }
+
+  .team-pengembang {
+    margin-top: 4.5em !important;
+
+    .heading-2 {
+      font-size: 2.3rem !important;
     }
   }
 

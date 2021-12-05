@@ -287,6 +287,128 @@ body {
   }
 }
 
+// Section 1
+.about-web {
+  @include mixins.margin-section($mtSize: 1em);
+
+  .wrap-about {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .text-about {
+    margin-top: 1.5em;
+
+    p:first-child {
+      @include mixins.sub-heading($fontSize: 0.75rem);
+    }
+
+    .heading-1 {
+      @include mixins.heading1();
+      
+      .d-red {
+        @include mixins.d-red();
+      }
+    }
+
+    p:last-child {
+      @include mixins.text-content($fontSize: .75rem);
+    }
+  }
+}
+
+// Fitur Web Section
+.fitur-web {
+  @include mixins.margin-section();
+
+  p:first-child {
+    @include mixins.sub-heading($fontSize: 0.75rem);
+  }
+
+  .heading-2 {
+    @include mixins.heading2();
+
+    .d-red {
+      @include mixins.d-red();
+    }
+  }
+
+  .fitur-card {
+    @include mixins.margin-section();
+
+    .logo-fitur {
+      background-color: colors.$secondary-color;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .body-fitur {
+      padding-top: 2rem;
+
+      .heading-3 {
+        @include mixins.heading3($lineHeight: 2rem);
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}
+
+// Team Pengembang Section
+.team-pengembang {
+  @include mixins.margin-section();
+
+  p:first-child {
+    @include mixins.sub-heading($fontSize: 0.75rem);
+  }
+
+  .heading-2 {
+    @include mixins.heading2();
+
+    .d-red {
+      @include mixins.d-red();
+    }
+  }
+
+  .team-card {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    img {
+      border-radius: 10px 10px 0 0;
+      -webkit-border-radius: 10px 10px 0 0;
+      -moz-border-radius: 10px 10px 0 0;
+      -ms-border-radius: 10px 10px 0 0;
+      -o-border-radius: 10px 10px 0 0;
+      height: 12rem;
+    }
+
+    .team-name {
+      @include mixins.heading3($lineHeight: 1.2);
+      margin-bottom: .5rem;
+    }
+
+    .team-id {
+      @include mixins.sub-heading($fontSize: 0.75rem);
+    }
+  }
+}
+
 // main-error
 .main-error {
   @include mixins.margin-section($mtSize: 5em);
