@@ -155,6 +155,32 @@
     font-size: 1rem !important;
   }
 
+  .pencarian-rs {
+    margin-top: 4em !important;
+  }
+  .pencarian-rs .heading-1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hasil-pencarian {
+    margin-top: 4em !important;
+  }
+  .hasil-pencarian p:first-child {
+    font-size: 1rem !important;
+  }
+  .hasil-pencarian .heading-2 {
+    font-size: 2rem !important;
+  }
+  .hasil-pencarian .card-kamar .nama-rs {
+    font-size: 1.5rem !important;
+  }
+  .hasil-pencarian .card-kamar .alamat-rs {
+    font-size: 1rem !important;
+  }
+  .hasil-pencarian .card-kamar .update-rs {
+    font-size: 0.8rem !important;
+  }
+
   .main-error {
     margin-top: 2em !important;
   }
@@ -226,6 +252,15 @@
   }
   .team-pengembang .team-card .team-name {
     font-size: 1.25rem !important;
+  }
+
+  .pencarian-rs .heading-1 {
+    font-size: 2rem !important;
+    padding: 0 5rem !important;
+  }
+
+  .hasil-pencarian .heading-2 {
+    font-size: 1.5rem !important;
   }
 
   .main-error .heading-1 {
@@ -307,6 +342,26 @@
   }
   .team-pengembang .heading-2 {
     font-size: 2.3rem !important;
+  }
+
+  .pencarian-rs {
+    margin-top: 4.5em !important;
+  }
+  .pencarian-rs .heading-1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hasil-pencarian {
+    margin-top: 4.5em !important;
+  }
+  .hasil-pencarian .heading-2 {
+    font-size: 2.3rem !important;
+  }
+  .hasil-pencarian .card-kamar .alamat-rs {
+    font-size: 0.8rem !important;
+  }
+  .hasil-pencarian .card-kamar .update-rs {
+    font-size: 0.75rem !important;
   }
 
   .main-error {
@@ -756,7 +811,7 @@ body {
 }
 
 .about-web {
-  margin-top: 1em;
+  margin-top: 2.5em;
 }
 .about-web .wrap-about {
   flex-direction: column;
@@ -885,6 +940,155 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
   font-size: 0.75rem;
+}
+
+.pencarian-rs {
+  margin-top: 2.5rem;
+  background-color: #121E2A;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 3rem 0;
+}
+.pencarian-rs .heading-1 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  padding: 0;
+  line-height: 3rem;
+  margin-bottom: 3.5rem;
+}
+.pencarian-rs .container-search {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.pencarian-rs .btn-cari {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.pencarian-rs .btn-cari:active {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+.pencarian-rs .btn-cari:active:focus {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+.pencarian-rs .btn-cari:visited {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+
+.hasil-pencarian {
+  margin-top: 3em;
+  color: #121E2A;
+}
+.hasil-pencarian p:first-child {
+  color: #FE0B0B;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.75rem;
+}
+.hasil-pencarian .heading-2 {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.hasil-pencarian .heading-2 .d-red {
+  color: #FE0B0B;
+  margin-left: -0.2em;
+}
+.hasil-pencarian .search-card {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+}
+.hasil-pencarian .search-card .input-rs {
+  outline: none;
+}
+.hasil-pencarian .search-card .input-rs::placeholder {
+  font-weight: bold;
+  color: #C4C4C4;
+}
+.hasil-pencarian .card-kamar {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 2px solid #C4C4C4;
+}
+.hasil-pencarian .card-kamar .nama-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.hasil-pencarian .card-kamar .alamat-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.hasil-pencarian .card-kamar .update-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.hasil-pencarian .card-kamar .btn-rs-ready {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+  background-color: #121E2A;
+  border: 1px solid #121E2A;
+}
+.hasil-pencarian .card-kamar .btn-rs-not {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
 }
 
 .main-error {
