@@ -1,0 +1,14 @@
+@use './colors';
+@use './responsive';
+@use './navbar';
+@use './footer';
+@use './typography'as typo;
+@use './utils';
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  font-family: "Poppins", arial, sans-serif;
+  color: colors.$primary-color;
+}
