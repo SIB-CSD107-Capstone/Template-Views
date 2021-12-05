@@ -11,6 +11,62 @@
     font-size: 1rem !important;
   }
 }
+@media (max-width: 600px) {
+  /* search bar */
+  .search-bar {
+    height: 860px !important;
+  }
+  .search-bar header h2 {
+    font-size: 30px !important;
+  }
+
+  .search-form .form-group {
+    margin-bottom: 40px;
+  }
+  .search-form .form-group label {
+    font-size: 16px !important;
+  }
+  .search-form .form-group select {
+    display: block;
+    height: 40px;
+  }
+  .search-form .form-check {
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .search-form .form-check input {
+    margin-right: 8px !important;
+  }
+  .search-form .form-check label {
+    margin: 0 !important;
+    font-size: 14px !important;
+    cursor: pointer;
+  }
+  .search-form .btn-search {
+    margin-top: 100px;
+    width: 410px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+
+  /* statistics section */
+  .statistics header h2 {
+    font-size: 30px !important;
+  }
+  .statistics h3 {
+    font-size: 20px !important;
+  }
+  .statistics .card .card-title {
+    font-size: 16px;
+  }
+  .statistics .card .card-text {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     box-shadow: none !important;
@@ -179,6 +235,10 @@
   }
   .hasil-pencarian .card-kamar .update-rs {
     font-size: 0.8rem !important;
+  }
+
+  .search-bar header h2 {
+    font-size: 48px !important;
   }
 
   .main-error {
@@ -501,9 +561,56 @@ footer .footer-bottom .content-foo-bottom .github {
   background-color: #FE0B0B;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Poppins", arial, sans-serif;
   color: #121E2A;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: #FE0B0B;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skip-link:hover {
+  color: white;
+}
+.skip-link:focus {
+  top: 10px;
 }
 
 .header {
@@ -1096,6 +1203,189 @@ body {
   background-color: #FE0B0B;
   border: 1px solid #FE0B0B;
   font-weight: bold;
+}
+
+main {
+  min-height: 460px;
+}
+
+/* search-bar */
+.search-bar {
+  padding-top: 120px;
+  height: 960px;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(243, 243, 243, 0.6)), url("../img/hero.jpg");
+  background-position: 0 0;
+  background-size: cover;
+}
+.search-bar header {
+  margin-bottom: 60px;
+}
+.search-bar header h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.search-form .form-group {
+  margin-bottom: 40px;
+}
+.search-form .form-group label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.search-form .form-group select {
+  height: 54px;
+  cursor: pointer;
+}
+.search-form .form-check {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.search-form .form-check input {
+  margin: 0 10px 0 0;
+}
+.search-form .form-check label {
+  cursor: pointer;
+}
+.search-form .btn-search {
+  margin-top: 90px;
+  width: 410px;
+  max-width: 90vw;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Statistics Section */
+.statistics {
+  min-height: 720px;
+}
+.statistics header {
+  margin-bottom: 90px;
+}
+.statistics header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #121E2A;
+}
+.statistics h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.statistics .card .card-title,
+.statistics .card .card-text {
+  font-weight: 600;
+}
+.statistics .confirmed {
+  cursor: pointer;
+}
+.statistics .confirmed:hover {
+  background-color: #5b5bfa;
+}
+.statistics .treated {
+  cursor: pointer;
+}
+.statistics .treated:hover {
+  background-color: #00c3ff;
+}
+.statistics .healed {
+  cursor: pointer;
+}
+.statistics .healed:hover {
+  background-color: #23b623;
+}
+.statistics .died {
+  cursor: pointer;
+}
+.statistics .died:hover {
+  background-color: #bb0707;
+}
+
+/* detail rawat inap */
+.detail-rawat-inap .btn-back {
+  display: block;
+}
+.detail-rawat-inap .telp-icon {
+  font-size: 1.4em;
+}
+.detail-rawat-inap .title-wrapper {
+  display: flex;
+}
+.detail-rawat-inap .title-wrapper .like-icon {
+  font-size: 2em;
+  margin-top: -5px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.detail-rawat-inap .service-detail .btn:focus {
+  box-shadow: none !important;
+}
+.detail-rawat-inap .service-detail .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail-rawat-inap .service-detail .card-header .up-arrow-icon {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.detail-rawat-inap .service-detail .card-body {
+  background-color: rgba(196, 196, 196, 0.4);
+  display: flex;
+  justify-content: space-around;
+}
+.detail-rawat-inap .service-detail .card-body .box {
+  padding-top: 0.4em;
+  padding: 0.4em 0.2em 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail-rawat-inap .service-detail .card-body .box p {
+  font-weight: 700;
+}
+.detail-rawat-inap .service-detail .card-body .box p:last-child {
+  font-size: 1.6em;
+}
+.detail-rawat-inap .service-detail .card-body .bed {
+  width: 140px;
+}
+
+/* Favorite Hospital Style */
+.favorite-hospital .search-favorite-hospital {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+}
+.favorite-hospital .search-favorite-hospital input {
+  outline: 0;
+}
+.favorite-hospital .search-favorite-hospital .search-icon {
+  width: 1.6em;
+  font-size: 1.6em;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.favorite-hospital .list-favorite-hospital {
+  margin-top: 5em;
+}
+.favorite-hospital .list-favorite-hospital .card {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+.favorite-hospital .list-favorite-hospital .card:hover {
+  background-color: #C4C4C4;
+}
+.favorite-hospital .text-address {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

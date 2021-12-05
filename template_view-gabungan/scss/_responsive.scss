@@ -16,6 +16,83 @@
   }
 }
 
+@media (max-width: 600px) {
+  /* search bar */
+  .search-bar {
+    height: 860px !important;
+
+    header {
+      h2 {
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  .search-form {
+    .form-group {
+      margin-bottom: 40px;
+
+      label {
+        font-size: 16px !important;
+      }
+
+      select {
+        display: block;
+        height: 40px;
+      }
+    }
+
+    .form-check {
+      padding-left: 10px !important;
+      padding-right: 0 !important;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 6px;
+      cursor: pointer;
+
+      input {
+        margin-right: 8px !important;
+      }
+
+      label {
+        margin: 0 !important;
+        font-size: 14px !important;
+        cursor: pointer;
+      }
+    }
+
+    .btn-search {
+      margin-top: 100px;
+      width: 410px;
+      font-size: 20px;
+      border-radius: 6px;
+    }
+  }
+
+  /* statistics section */
+  .statistics {
+    header {
+      h2 {
+        font-size: 30px !important;
+      }
+    }
+
+    h3 {
+      font-size: 20px !important;
+    }
+
+    .card {
+      .card-title {
+        font-size: 16px;
+      }
+
+      .card-text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     box-shadow: none !important;
@@ -232,6 +309,14 @@
 
       .update-rs {
         font-size: .8rem !important;
+      }
+    }
+  }
+
+  .search-bar {
+    header {
+      h2 {
+        font-size: 48px !important;
       }
     }
   }
