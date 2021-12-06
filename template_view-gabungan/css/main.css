@@ -1412,6 +1412,15 @@ main {
   font-weight: 600;
 }
 
+.accessibility-44 {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .breadcrumb .breadcrumb-item {
   padding: 1rem 1rem 1rem 0;
 }

@@ -845,6 +845,16 @@ main {
   .text-address {
     font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
   }
+
+}
+
+.accessibility-44 {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 .breadcrumb {
