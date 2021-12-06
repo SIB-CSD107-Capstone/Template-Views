@@ -132,6 +132,7 @@ body {
 
   .heading-3 {
     @include mixins.heading3($lineHeight: 2rem);
+    min-height: 44px;
 
     .d-red {
       color: colors.$secondary-color;
@@ -169,6 +170,8 @@ body {
   }
 
   .card-body {
+    padding: 0 !important;
+
     .heading-3 {
       @include mixins.heading3($lineHeight: 2rem);
       text-align: center;
@@ -182,6 +185,9 @@ body {
         -moz-transition: .3s color ease;
         -ms-transition: .3s color ease;
         -o-transition: .3s color ease;
+        min-width: 44px !important;
+        padding: 1em 0;
+        display: inline-block;
 
         &:hover {
           color: colors.$secondary-color;
@@ -239,6 +245,7 @@ body {
 .blog-detail {
   @include mixins.margin-section($mtSize: 2.5em);
   margin-bottom: 2.5em;
+
 
   .sub-detail {
     @include mixins.sub-heading($fontSize: 0.75rem);
@@ -449,6 +456,12 @@ body {
 
     .team-id {
       @include mixins.sub-heading($fontSize: 0.75rem);
+    }
+  }
+
+  .i-social {
+    .icon-about {
+      padding: .75em;
     }
   }
 }
@@ -827,5 +840,15 @@ main {
 
   .text-address {
     font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item {
+    padding: 1rem 1rem 1rem 0;
+
+    a {
+      padding: 1rem 1rem 1rem 0;
+    }
   }
 }

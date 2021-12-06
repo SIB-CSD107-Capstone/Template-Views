@@ -34,6 +34,7 @@ footer {
           text-decoration: none;
           color: colors.$third-color;
           font-size: .75rem;
+          padding: 1.25em 0;
 
           &:hover {
             color: darken($color: colors.$third-color, $amount: 30%);
