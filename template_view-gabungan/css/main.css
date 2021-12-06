@@ -573,6 +573,71 @@ footer .footer-bottom .content-foo-bottom .github {
   background-color: #FE0B0B;
 }
 
+.accessibility-44 {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.card-kamar {
+  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 2px solid #C4C4C4;
+}
+.card-kamar .nama-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.card-kamar .alamat-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.card-kamar .update-rs {
+  color: #121E2A;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  line-height: 0rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.card-kamar .btn-rs-ready {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+  background-color: #121E2A;
+  border: 1px solid #121E2A;
+}
+.card-kamar .btn-rs-not {
+  padding: 0.5rem;
+  min-height: 44px;
+  background-color: #FE0B0B;
+  border: 1px solid #FE0B0B;
+  font-weight: bold;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1152,61 +1217,6 @@ body {
   font-weight: bold;
   color: #C4C4C4;
 }
-.hasil-pencarian .card-kamar {
-  box-shadow: 0px 0.3px 0.4px rgba(0, 0, 0, 0.02), 0px 0.7px 1.1px rgba(0, 0, 0, 0.028), 0px 1.3px 2px rgba(0, 0, 0, 0.035), 0px 2.2px 3.6px rgba(0, 0, 0, 0.042), 0px 4.2px 6.7px rgba(0, 0, 0, 0.05), 0px 10px 16px rgba(0, 0, 0, 0.07);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border: 2px solid #C4C4C4;
-}
-.hasil-pencarian .card-kamar .nama-rs {
-  color: #121E2A;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  line-height: 0rem;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-}
-.hasil-pencarian .card-kamar .alamat-rs {
-  color: #121E2A;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  line-height: 0rem;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-.hasil-pencarian .card-kamar .update-rs {
-  color: #121E2A;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  line-height: 0rem;
-  font-size: 0.75rem;
-  margin-bottom: 1.25rem;
-  line-height: 1.2;
-  font-weight: 400;
-}
-.hasil-pencarian .card-kamar .btn-rs-ready {
-  padding: 0.5rem;
-  min-height: 44px;
-  background-color: #FE0B0B;
-  border: 1px solid #FE0B0B;
-  font-weight: bold;
-  background-color: #121E2A;
-  border: 1px solid #121E2A;
-}
-.hasil-pencarian .card-kamar .btn-rs-not {
-  padding: 0.5rem;
-  min-height: 44px;
-  background-color: #FE0B0B;
-  border: 1px solid #FE0B0B;
-  font-weight: bold;
-}
 
 .main-error {
   margin-top: 5em;
@@ -1401,24 +1411,8 @@ main {
 .favorite-hospital .list-favorite-hospital {
   margin-top: 5em;
 }
-.favorite-hospital .list-favorite-hospital .card {
-  cursor: pointer;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-}
-.favorite-hospital .list-favorite-hospital .card:hover {
-  background-color: #C4C4C4;
-}
 .favorite-hospital .text-address {
   font-weight: 600;
-}
-
-.accessibility-44 {
-  min-height: 44px;
-  min-width: 44px;
-}
-
-.cursor-pointer {
-  cursor: pointer !important;
 }
 
 .breadcrumb .breadcrumb-item {
