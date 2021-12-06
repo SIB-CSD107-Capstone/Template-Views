@@ -1396,4 +1396,11 @@ main {
   font-weight: 600;
 }
 
+.breadcrumb .breadcrumb-item {
+  padding: 1rem 1rem 1rem 0;
+}
+.breadcrumb .breadcrumb-item a {
+  padding: 1rem 1rem 1rem 0;
+}
+
 /*# sourceMappingURL=main.css.map */

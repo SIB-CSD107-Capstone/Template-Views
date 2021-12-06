@@ -171,6 +171,7 @@ body {
 
   .card-body {
     padding: 0 !important;
+
     .heading-3 {
       @include mixins.heading3($lineHeight: 2rem);
       text-align: center;
@@ -244,6 +245,7 @@ body {
 .blog-detail {
   @include mixins.margin-section($mtSize: 2.5em);
   margin-bottom: 2.5em;
+
 
   .sub-detail {
     @include mixins.sub-heading($fontSize: 0.75rem);
@@ -832,5 +834,15 @@ main {
 
   .text-address {
     font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item {
+    padding: 1rem 1rem 1rem 0;
+
+    a {
+      padding: 1rem 1rem 1rem 0;
+    }
   }
 }
