@@ -80,18 +80,18 @@
           </div>
 
           <!-- button tipe rawat inap  -->
-          <div class=" mt-5 ">
-            <p>Category</p>
-            <button class="form-check btn btn-danger" type="button">
-              <input class="" type="radio" name="inpatient" id="covid" value="covid" checked>
-              <label class="form-check-label" for="covid">
+          <div class=" my-5 ">
+            <p>Kategori</p>
+            <button class="btn btn-danger accessibility-44 active-shadow" type="button">
+              <input class="cursor-pointer" type="radio" name="inpatient" id="covid" value="covid" checked>
+              <label class="form-check-label cursor-pointer" for="covid">
                 Covid
               </label>
             </button>
 
-            <button class="form-check btn btn-danger ml-2" type="button">
-              <input class="" type="radio" name="inpatient" id="non-covid" value="non-covid">
-              <label class="form-check-label" for="non-covid">
+            <button class="active-shadow btn btn-danger ml-2 accessibility-44" type="button">
+              <input class="cursor-pointer" type="radio" name="inpatient" id="non-covid" value="non-covid">
+              <label class="form-check-label cursor-pointer" for="non-covid">
                 Non - Covid
               </label>
             </button>
@@ -99,44 +99,72 @@
           </div>
 
           <!-- list favorite hospital  -->
-          <div class="row list-favorite-hospital">
-            <div class="col-md-6">
-              <div class="card mb-4" tabindex="0" aria-label="hospital item">
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold" tabindex="0">RS Umum Daerah Sekarwangi</h5>
-                  <p class="card-text text-address" tabindex="0">Jl. Siliwangi No.49 Cibadak Sukabumi</p>
-                  <small class="d-block mb-4" tabindex="0">Diupdate 30 menit yang lalu</small>
-                  <div class="bed-info rounded bg-dark px-3 py-1" style="width: fit-content;">
-                    <p class="text-white text-center m-0 font-weight-bold" tabindex="0">Tersedia 6 Tempat Tidur</p>
+          <div class="row row-cols-1 row-cols-md-2 mb-5" id="list-favorite-hospital">
+            <div class="col mb-4">
+              <div class="card h-100 card-kamar">
+                <div class="card-body p-4 p-md-5 text-center text-md-left">
+                  <h3 class="card-title nama-rs" tabindex="0" onclick="location.href='detail_rawat_inap_page.html';">RS
+                    Umum Daerah Sekarwangi</h3>
+                  <p class="card-text alamat-rs" tabindex="0">Jl. Siliwangi No. 49 Cibadak Sukabumi</p>
+                  <p class="update-rs" tabindex="0">Diupdate 30 menit yang lalu</p>
+                  <div tabindex="0" class="btn btn-primary btn-rs-ready px-3 rounded-pill">
+                    Tersedia 6 Kamar
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="card mb-4" tabindex="0" aria-label="hospital item">
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold" tabindex="0">RS Umum Daerah Sekarwangi</h5>
-                  <p class="card-text text-address" tabindex="0">Jl. Siliwangi No.49 Cibadak Sukabumi</p>
-                  <small class="d-block mb-4" tabindex="0">Diupdate 30 menit yang lalu</small>
-                  <div class="bed-info rounded bg-dark px-3 py-1" style="width: fit-content;">
-                    <p class="text-white text-center m-0 font-weight-bold" tabindex="0">Tersedia 6 Tempat Tidur</p>
+            <div class="col mb-4">
+              <div class="card h-100 card-kamar">
+                <div class="card-body p-4 p-md-5 text-center text-md-left">
+                  <h3 class="card-title nama-rs" tabindex="0" onclick="location.href='detail_rawat_inap_page.html';">RS
+                    Umum Daerah Sekarwangi</h3>
+                  <p class="card-text alamat-rs" tabindex="0">Jl. Siliwangi No. 49 Cibadak Sukabumi</p>
+                  <p class="update-rs" tabindex="0">Diupdate 30 menit yang lalu</p>
+                  <div tabindex="0" class="btn btn-primary rounded-pill px-3 btn-rs-not">
+                    Tidak Tersedia
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="card mb-4" tabindex="0" aria-label="hospital item">
-                <div class="card-body">
-                  <h5 class="card-title font-weight-bold" tabindex="0">RS Umum Daerah Sekarwangi</h5>
-                  <p class="card-text text-address" tabindex="0">Jl. Siliwangi No.49 Cibadak Sukabumi</p>
-                  <small class="d-block mb-4" tabindex="0">Diupdate 30 menit yang lalu</small>
-                  <div class="bed-info rounded bg-red px-3 py-1" style="width: fit-content;">
-                    <p class="text-white text-center m-0 font-weight-bold" tabindex="0">Tersedia 6 Tempat Tidur</p>
+            <div class="col mb-4">
+              <div class="card h-100 card-kamar">
+                <div class="card-body p-4 p-md-5 text-center text-md-left">
+                  <h3 class="card-title nama-rs" tabindex="0" onclick="location.href='detail_rawat_inap_page.html';">RS
+                    Umum Daerah Sekarwangi</h3>
+                  <p class="card-text alamat-rs" tabindex="0">Jl. Siliwangi No. 49 Cibadak Sukabumi</p>
+                  <p class="update-rs" tabindex="0">Diupdate 30 menit yang lalu</p>
+                  <div tabindex="0" class="btn btn-primary rounded-pill px-3 btn-rs-ready">
+                    Tersedia 6 Kamar
                   </div>
                 </div>
               </div>
             </div>
-
+            <div class="col mb-4">
+              <div class="card h-100 card-kamar">
+                <div class="card-body p-4 p-md-5 text-center text-md-left">
+                  <h3 class="card-title nama-rs" tabindex="0" onclick="location.href='detail_rawat_inap_page.html';">RS
+                    Umum Daerah Sekarwangi</h3>
+                  <p class="card-text alamat-rs" tabindex="0">Jl. Siliwangi No. 49 Cibadak Sukabumi</p>
+                  <p class="update-rs" tabindex="0">Diupdate 30 menit yang lalu</p>
+                  <div tabindex="0" class="btn btn-primary rounded-pill px-3 btn-rs-not">
+                    Tidak Tersedia
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100 card-kamar">
+                <div class="card-body p-4 p-md-5 text-center text-md-left">
+                  <h3 class="card-title nama-rs" tabindex="0" onclick="location.href='detail_rawat_inap_page.html';">RS
+                    Umum Daerah Sekarwangi</h3>
+                  <p class="card-text alamat-rs" tabindex="0">Jl. Siliwangi No. 49 Cibadak Sukabumi</p>
+                  <p class="update-rs" tabindex="0">Diupdate 30 menit yang lalu</p>
+                  <div tabindex="0" class="btn btn-primary rounded-pill px-3 btn-rs-not">
+                    Tidak Tersedia
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
