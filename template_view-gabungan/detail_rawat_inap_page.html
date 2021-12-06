@@ -9,11 +9,11 @@
     <meta name="robots" content="index, follow">
     <title>Ranavid Apps - Media Page</title>
     <link rel="icon" href="img/favicon.png">
-  
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -60,22 +60,29 @@
       <section id="detail-rawat-inap" class="detail-rawat-inap  py-5">
         <div class="container">
           <header class="text-center mb-5">
-            <h2 class="font-weight-bold" tabindex="0">
+            <h2 class="font-weight-bold" tabindex="0" style="font-size: 3em;">
               Detail Rawat Inap
             </h2>
           </header>
           <div class="row justify-content-center">
             <div class="col col-lg-8">
               <header>
-                <button class="btn p-0 mb-4 btn-back" style="min-width: 44px; min-height: 44px;" onclick="location.href='search_page.html';"><span class="iconify"
-                    data-icon="fa-solid:arrow-left"></span></button>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-transparent pl-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pencarian</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                  </ol>
+                </nav>
                 <div class="title-wrapper">
                   <h4 class="rs-name" tabindex="0">RS Umum Puri Raharja</h4>
-                  <span class="iconify like-icon" data-icon="ant-design:like-outlined" tabindex="0" onclick="location.href='favorite-hospitals_page.html';"></span>
+                  <span class="iconify like-icon" data-icon="ant-design:like-outlined" tabindex="0"
+                    onclick="location.href='favorite-hospitals_page.html';" data-width="44"
+                    title="favorite rumah sakit"></span>
                 </div>
 
                 <p class="rs-address" tabindex="0">Jl. WR Supratman 14</p>
-                <a href="#" class="btn btn-outline-danger">Lihat Peta <span class="iconify"
+                <a href="#" class="btn btn-outline-danger btn-map pt-2">Lihat Peta <span class="iconify"
                     data-icon="simple-icons:googlemaps"></span></a>
                 <button class="btn btn-danger btn-telp"><span class="telp-icon  iconify"
                     data-icon="clarity:phone-handset-solid"></span>

@@ -1,22 +1,33 @@
-@media screen and (min-width: 425px) {
-  .modal-custom {
-    .mv-edukasi {
-      width: 24em !important;
+@media (max-width: 768px) {
+  .search-bar {
+    header {
+      h2 {
+        font-size: 48px !important;
+      }
     }
   }
 
-  .blog-detail {
-    img {
-      height: 19em !important;
-    }
+  .favorite-hospital {
 
-    .blog-text {
-      font-size: 1rem !important;
+    .search-favorite-hospital {
+      input {
+        width: 88%;
+
+      }
+
+      .search-icon {
+        // width: 1.6em;
+        font-size: 1em !important;
+        padding-right: 8px;
+        cursor: pointer;
+        min-width: 44px;
+      }
     }
   }
 }
 
 @media (max-width: 600px) {
+
   /* search bar */
   .search-bar {
     height: 860px !important;
@@ -92,6 +103,25 @@
     }
   }
 }
+
+@media screen and (min-width: 425px) {
+  .modal-custom {
+    .mv-edukasi {
+      width: 24em !important;
+    }
+  }
+
+  .blog-detail {
+    img {
+      height: 19em !important;
+    }
+
+    .blog-text {
+      font-size: 1rem !important;
+    }
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .header {

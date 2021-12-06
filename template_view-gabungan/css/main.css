@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@media screen and (min-width: 425px) {
-  .modal-custom .mv-edukasi {
-    width: 24em !important;
+@media (max-width: 768px) {
+  .search-bar header h2 {
+    font-size: 48px !important;
   }
 
-  .blog-detail img {
-    height: 19em !important;
+  .favorite-hospital .search-favorite-hospital input {
+    width: 88%;
   }
-  .blog-detail .blog-text {
-    font-size: 1rem !important;
+  .favorite-hospital .search-favorite-hospital .search-icon {
+    font-size: 1em !important;
+    padding-right: 8px;
+    cursor: pointer;
+    min-width: 44px;
   }
 }
 @media (max-width: 600px) {
@@ -65,6 +68,18 @@
   }
   .statistics .card .card-text {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .modal-custom .mv-edukasi {
+    width: 24em !important;
+  }
+
+  .blog-detail img {
+    height: 19em !important;
+  }
+  .blog-detail .blog-text {
+    font-size: 1rem !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1317,6 +1332,11 @@ main {
 .detail-rawat-inap .btn-back {
   display: block;
 }
+.detail-rawat-inap .btn-map,
+.detail-rawat-inap .btn-telp {
+  min-width: 44px;
+  min-height: 44px;
+}
 .detail-rawat-inap .telp-icon {
   font-size: 1.4em;
 }
@@ -1324,9 +1344,8 @@ main {
   display: flex;
 }
 .detail-rawat-inap .title-wrapper .like-icon {
-  font-size: 2em;
-  margin-top: -5px;
-  margin-left: 8px;
+  margin-top: -1em;
+  margin-left: 10px;
   cursor: pointer;
 }
 .detail-rawat-inap .service-detail .btn:focus {
@@ -1373,13 +1392,11 @@ main {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
 }
 .favorite-hospital .search-favorite-hospital input {
+  width: 90%;
   outline: 0;
 }
-.favorite-hospital .search-favorite-hospital .search-icon {
-  width: 1.6em;
-  font-size: 1.6em;
-  padding-right: 8px;
-  cursor: pointer;
+.favorite-hospital .search-favorite-hospital .btn-search:active {
+  background-color: #eaeaea;
 }
 .favorite-hospital .list-favorite-hospital {
   margin-top: 5em;

@@ -9,11 +9,11 @@
     <meta name="robots" content="index, follow">
     <title>Ranavid Apps - Media Page</title>
     <link rel="icon" href="img/favicon.png">
-  
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -37,10 +37,10 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Favorite</a>
+                <a class="nav-link active" href="#">Favorite</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Blog</a>
+                <a class="nav-link " href="#">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -67,13 +67,36 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-6">
               <div
-                class="search-favorite-hospital w-100 border border-danger rounded-pill overflow-hidden d-flex align-items-center">
-                <input type="text" class="w-100 p-2 pl-4 border-0" placeholder="Cari nama rumah sakit ...">
-                <span class="iconify search-icon" data-icon="fa-solid:search"></span>
+                class="search-favorite-hospital w-100 border border-danger rounded-pill overflow-hidden d-flex align-items-center"
+                style="min-height: 44px;">
+                <input type="text" class="p-2 pl-4 border-0" placeholder="Cari nama rumah sakit ..."
+                  style="min-height: 44px;">
+                <button class="btn text-secondary btn-search">
+                  <span class="iconify " data-icon="fa-solid:search" data-height="30" data-width="30"></span>
+                </button>
+
               </div>
             </div>
           </div>
 
+          <!-- button tipe rawat inap  -->
+          <div class=" mt-5 ">
+            <p>Category</p>
+            <button class="form-check btn btn-danger" type="button">
+              <input class="" type="radio" name="inpatient" id="covid" value="covid" checked>
+              <label class="form-check-label" for="covid">
+                Covid
+              </label>
+            </button>
+
+            <button class="form-check btn btn-danger ml-2" type="button">
+              <input class="" type="radio" name="inpatient" id="non-covid" value="non-covid">
+              <label class="form-check-label" for="non-covid">
+                Non - Covid
+              </label>
+            </button>
+
+          </div>
 
           <!-- list favorite hospital  -->
           <div class="row list-favorite-hospital">
