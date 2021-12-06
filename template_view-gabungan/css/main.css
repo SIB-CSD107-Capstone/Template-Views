@@ -535,6 +535,7 @@ footer .footer-up ul li a {
   text-decoration: none;
   color: #6C757D;
   font-size: 0.75rem;
+  padding: 1.25em 0;
 }
 footer .footer-up ul li a:hover {
   color: #25282b;
@@ -696,6 +697,7 @@ body {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 2rem;
+  min-height: 44px;
 }
 .custom-blog-post .heading-3 .d-red {
   color: #FE0B0B;
@@ -733,6 +735,9 @@ body {
   -ms-border-radius: 1.25rem 1.25rem 0 0;
   -o-border-radius: 1.25rem 1.25rem 0 0;
 }
+.custom-video-post .card-body {
+  padding: 0 !important;
+}
 .custom-video-post .card-body .heading-3 {
   color: #121E2A;
   font-weight: bold;
@@ -750,6 +755,9 @@ body {
   -moz-transition: 0.3s color ease;
   -ms-transition: 0.3s color ease;
   -o-transition: 0.3s color ease;
+  min-width: 44px !important;
+  padding: 1em 0;
+  display: inline-block;
 }
 .custom-video-post .card-body .heading-3 a:hover {
   color: #FE0B0B;

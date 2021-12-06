@@ -132,6 +132,7 @@ body {
 
   .heading-3 {
     @include mixins.heading3($lineHeight: 2rem);
+    min-height: 44px;
 
     .d-red {
       color: colors.$secondary-color;
@@ -169,6 +170,7 @@ body {
   }
 
   .card-body {
+    padding: 0 !important;
     .heading-3 {
       @include mixins.heading3($lineHeight: 2rem);
       text-align: center;
@@ -182,6 +184,9 @@ body {
         -moz-transition: .3s color ease;
         -ms-transition: .3s color ease;
         -o-transition: .3s color ease;
+        min-width: 44px !important;
+        padding: 1em 0;
+        display: inline-block;
 
         &:hover {
           color: colors.$secondary-color;
