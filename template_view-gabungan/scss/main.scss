@@ -546,8 +546,6 @@ body {
       }
     }
   }
-
-
 }
 
 // main-error
@@ -713,11 +711,16 @@ main {
   .title-wrapper {
     display: flex;
 
-    .like-icon {
-      // font-size: 2em;
-      margin-top: -1em;
-      margin-left: 10px;
-      cursor: pointer;
+    button {
+      margin-left: 6px;
+      margin-top: -.6em;
+      background-color: transparent;
+      border: 0;
+
+      .like-icon {
+        color: #eaeaea;
+        outline: 0;
+      }
     }
   }
 
@@ -788,19 +791,10 @@ main {
     }
   }
 
-  .list-favorite-hospital {
-    margin-top: 5em;
-
-
-  }
-
   .text-address {
     font-weight: map-get($map: typo.$font-weights, $key:'semi-bold');
   }
-
 }
-
-
 
 .breadcrumb {
   .breadcrumb-item {

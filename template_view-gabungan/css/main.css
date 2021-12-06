@@ -638,6 +638,10 @@ footer .footer-bottom .content-foo-bottom .github {
   font-weight: bold;
 }
 
+.active-shadow:hover {
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1353,10 +1357,15 @@ main {
 .detail-rawat-inap .title-wrapper {
   display: flex;
 }
-.detail-rawat-inap .title-wrapper .like-icon {
-  margin-top: -1em;
-  margin-left: 10px;
-  cursor: pointer;
+.detail-rawat-inap .title-wrapper button {
+  margin-left: 6px;
+  margin-top: -0.6em;
+  background-color: transparent;
+  border: 0;
+}
+.detail-rawat-inap .title-wrapper button .like-icon {
+  color: #eaeaea;
+  outline: 0;
 }
 .detail-rawat-inap .service-detail .btn:focus {
   box-shadow: none !important;
@@ -1407,9 +1416,6 @@ main {
 }
 .favorite-hospital .search-favorite-hospital .btn-search:active {
   background-color: #eaeaea;
-}
-.favorite-hospital .list-favorite-hospital {
-  margin-top: 5em;
 }
 .favorite-hospital .text-address {
   font-weight: 600;
