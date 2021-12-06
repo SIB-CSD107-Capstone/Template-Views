@@ -237,10 +237,6 @@
     font-size: 0.8rem !important;
   }
 
-  .search-bar header h2 {
-    font-size: 48px !important;
-  }
-
   .main-error {
     margin-top: 2em !important;
   }
@@ -1043,6 +1039,9 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
   font-size: 0.75rem;
+}
+.team-pengembang .i-social .icon-about {
+  padding: 0.75em;
 }
 
 .pencarian-rs {

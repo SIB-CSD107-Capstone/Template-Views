@@ -458,6 +458,12 @@ body {
       @include mixins.sub-heading($fontSize: 0.75rem);
     }
   }
+
+  .i-social {
+    .icon-about {
+      padding: .75em;
+    }
+  }
 }
 
 // Pencarian RS
